@@ -8,7 +8,6 @@
 
 import UIKit
 import Spruce
-import CircleMenu
 
 class MainViewController: BaseViewController {
     @IBOutlet weak var collectionView: UICollectionView!
@@ -149,6 +148,13 @@ class MainViewController: BaseViewController {
             self.animationView?.spruce.animate(self.animations, animationType: animation, sortFunction: sortFunction)
         }
     }
+
+    //MARK: - IBActions
+    @IBAction func clearItemsAction(_ sender: UIBarButtonItem) {
+        selectedItems.removeAll()
+        tableView.reloadData()
+    }
+
 }
 
 //MARK: - Extensions
@@ -181,6 +187,13 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return false
         }
         return true
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row != 0 {
+            return 60
+        }
+        return 40
     }
 }
 
@@ -225,6 +238,3 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
 extension MainViewController: UISearchBarDelegate {
     
 }
-
-
-
