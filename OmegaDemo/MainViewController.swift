@@ -62,7 +62,7 @@ class MainViewController: BaseViewController {
 
         upperStackView.spacing = 5
         lowerStackView.spacing = 5
-        totalsView.cornerRadius = 2
+        totalsView.cornerRadius = 5
         totalsView.borderColor = UIColor.lightGray.cgColor
         totalsView.borderWidth = 0.4
     }

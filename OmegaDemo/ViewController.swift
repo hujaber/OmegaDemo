@@ -26,6 +26,7 @@ class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         connectToDB()
+        navigationController?.navigationItem.hidesBackButton = false
     }
 
     func connectToDB() {
@@ -153,7 +154,3 @@ class ViewController: BaseViewController {
         }
     }
 }
-
-
-
-

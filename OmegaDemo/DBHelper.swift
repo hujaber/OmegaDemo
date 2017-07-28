@@ -10,11 +10,13 @@ import Foundation
 import SQLite
 
 class DBHelper {
-    static let path = "/Users/macuser/Desktop/testDB"
 
-    class func makeConnection() -> (Connection?, Bool) {
+    static let dbName = "testDB"
+    
+    static func makeConnection() -> (Connection?, Bool) {
         do {
-            let db = try Connection(path)
+            let path = Utility.getPath(filename: "testDB")
+            let db = try Connection(path!)
             return (db, true)
         } catch {
             print("Failed to connect to database");
@@ -23,15 +25,13 @@ class DBHelper {
 
     }
 
-    class func deleteAllEntriesForTable(table: Table!, forDB db: Connection!) -> Bool {
+    static func deleteAllEntriesForTable(table: Table!, forDB db: Connection!) -> Bool {
         do {
             try db.run(table.delete())
             return true;
         } catch {
             return false
         }
-
     }
-    
 
 }

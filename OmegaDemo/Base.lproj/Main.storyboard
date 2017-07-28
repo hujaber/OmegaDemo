@@ -268,7 +268,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBn-MX-T62">
-                                <rect key="frame" x="20" y="94" width="468" height="21"/>
+                                <rect key="frame" x="20" y="94.5" width="468" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -356,7 +356,7 @@
                                 <action selector="clearItemsAction:" destination="ZYw-bN-kay" id="s02-gM-X46"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Next" id="nAb-Pf-fbS">
+                        <barButtonItem key="rightBarButtonItem" title="DB &amp; Tables" id="nAb-Pf-fbS">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" id="Xdq-GG-f0G"/>
                             </connections>

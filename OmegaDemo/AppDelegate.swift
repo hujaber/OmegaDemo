@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor.oliveColor
         UINavigationBar.appearance().tintColor = UIColor.white
         UIApplication.shared.statusBarStyle = .lightContent
+        Utility.copyFiles(fileName: "testDB")
         return true
     }
 
