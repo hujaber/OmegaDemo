@@ -102,6 +102,7 @@ extension UIView {
 }
 
 extension FileManager {
+
     static func documentsDirectory() -> String? {
         let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         return paths.first
@@ -208,6 +209,13 @@ extension String {
 //
 //        return matches(pattern: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}")
 //    }
+
+    public func isValidEmail(supposedEmail: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: supposedEmail)
+    }
 
     public var length: Int {
 

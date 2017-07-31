@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import Spruce
 
 class MainViewController: BaseViewController {
+
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var holdOrderBtn: UIButton!
@@ -22,14 +22,11 @@ class MainViewController: BaseViewController {
     @IBOutlet weak var lowerStackView: UIStackView!
     @IBOutlet weak var orderNumberLabel: UILabel!
     @IBOutlet weak var totalsView: UIView!
+    @IBOutlet var totalSum: [UILabel]!
 
-    //Animations
-    var animations: [StockAnimation] = []
-    var sortFunction: SortFunction?
-    var animationView: UIView?
-    var timer: Timer?
-
+    var searchResults = [FoodItem]()
     var searchBar: UISearchBar?
+    var isSearchBarActive: Bool = false
 
     enum TableCellsID {
         static let header = "HeaderCell"
@@ -43,10 +40,30 @@ class MainViewController: BaseViewController {
 
     let collectionCellId = "CollectionCell"
 
-
-    let itemsArray: [String] = ["Burger", "Pizza", "Steak", "Fish", "Shrimps", "Fattush", "Pepsi", "Seven Up", "Fries", "Pasta", "Chicken Breast"]
-
-    var selectedItems: [String] = []
+    let itemsArray: [FoodItem] = [FoodItem.init(name: "Burger", unitPrice: 5500, quantity: 1),
+                                  FoodItem.init(name: "Pizza", unitPrice: 13000, quantity: 1),
+                                  FoodItem.init(name: "Steak", unitPrice: 16000, quantity: 1),
+                                  FoodItem.init(name: "Fish", unitPrice: 26000, quantity: 1),
+                                  FoodItem.init(name: "Shrimps", unitPrice: 43000, quantity: 1),
+                                  FoodItem.init(name: "Fattush", unitPrice: 7500, quantity: 1),
+                                  FoodItem.init(name: "Pepsi", unitPrice: 1500, quantity: 1),
+                                  FoodItem.init(name: "Seven Up", unitPrice: 1500, quantity: 1),
+                                  FoodItem.init(name: "Fries", unitPrice: 4000, quantity: 1),
+                                  FoodItem.init(name: "Pasta", unitPrice: 12500, quantity: 1),
+                                  FoodItem.init(name: "Chicken Breast", unitPrice: 11000, quantity: 1),
+                                  FoodItem.init(name: "Cheese Burger", unitPrice: 5500, quantity: 1),
+                                  FoodItem.init(name: "Tabboleh", unitPrice: 13000, quantity: 1),
+                                  FoodItem.init(name: "Tuna Salad", unitPrice: 16000, quantity: 1),
+                                  FoodItem.init(name: "Ceasar Salad", unitPrice: 26000, quantity: 1),
+                                  FoodItem.init(name: "Farrouj", unitPrice: 43000, quantity: 1),
+                                  FoodItem.init(name: "Argile", unitPrice: 7500, quantity: 1),
+                                  FoodItem.init(name: "Orange Juice", unitPrice: 1500, quantity: 1),
+                                  FoodItem.init(name: "Crispy 6 pcs", unitPrice: 1500, quantity: 1),
+                                  FoodItem.init(name: "Fahita", unitPrice: 4000, quantity: 1),
+                                  FoodItem.init(name: "Fransisco", unitPrice: 12500, quantity: 1),
+                                  FoodItem.init(name: "Falefel", unitPrice: 11000, quantity: 1)
+    ]
+    var selectedItems: [FoodItem] = []
 
 
 
@@ -59,12 +76,12 @@ class MainViewController: BaseViewController {
         setupButtons()
         setupLabel()
         setupSearchBar()
-
         upperStackView.spacing = 5
         lowerStackView.spacing = 5
         totalsView.cornerRadius = 5
         totalsView.borderColor = UIColor.lightGray.cgColor
         totalsView.borderWidth = 0.4
+        updateTotalsLabel()
     }
 
     //MARK: - Setups
@@ -124,35 +141,26 @@ class MainViewController: BaseViewController {
         }
     }
 
-    //MARK: - Animations
-
-    func prepareForAnimation() {
-        sortFunction = LinearSortFunction(direction: .leftToRight, interObjectDelay: 0.1)
-        animationView = collectionView
-        animations = [.fadeIn, .expand(.slightly)]
-        prepareAnimation()
-    }
-
-    func prepareAnimation() {
-        animationView?.spruce.prepare(with: animations)
-        timer?.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(callAnimation), userInfo: nil, repeats: false)
-    }
-
-    func callAnimation() {
-        guard let sortFunction = sortFunction else {
-            return
-        }
-        let animation = SpringAnimation(duration: 0.7)
-        DispatchQueue.main.async {
-            self.animationView?.spruce.animate(self.animations, animationType: animation, sortFunction: sortFunction)
-        }
-    }
-
     //MARK: - IBActions
     @IBAction func clearItemsAction(_ sender: UIBarButtonItem) {
         selectedItems.removeAll()
         tableView.reloadData()
+        updateTotalsLabel()
+    }
+
+    //MARK: - Private Methods
+
+    func calculateTotal() -> String {
+        var sum: Float = 0.0
+        for item in selectedItems {
+            sum = sum + (Float(item.quantity!) * item.unitPrice)
+        }
+        return "\(sum)"
+    }
+
+    func updateTotalsLabel() {
+
+        totalSum.first?.text = calculateTotal()
     }
 
 }
@@ -169,10 +177,14 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: TableCellsID.header)
+            cell?.selectionStyle = .none
             return cell!
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: TableCellsID.item) as! SelectedItemsTableViewCell
-        cell.setCell(itemName: selectedItems[indexPath.row - 1], quantity: "\(1)", unitPrice: "7000")
+        cell.delegate = self
+        cell.cellId = indexPath.row - 1
+        let foodItem = selectedItems[indexPath.row - 1]
+        cell.setCell(itemName: foodItem.name, quantity: foodItem.quantity, unitPrice: foodItem.unitPrice)
         return cell
     }
 
@@ -180,8 +192,10 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         if editingStyle == .delete {
             selectedItems.remove(at: indexPath.row - 1)
             tableView.reloadData()
+            updateTotalsLabel()
         }
     }
+    
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         if indexPath.row == 0 {
             return false
@@ -202,6 +216,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 extension MainViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if isSearchBarActive {
+            return searchResults.count
+        }
         return itemsArray.count
     }
 
@@ -209,7 +226,11 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellId, for: indexPath) as! ItemsCollectionViewCell
         cell.backgroundColor = UIColor.lightBlueColor.withAlphaComponent(0.9)
         cell.layer.cornerRadius = 5
-        cell.itemLabel.text = itemsArray[indexPath.row]
+        if isSearchBarActive {
+            cell.itemLabel.text = searchResults[indexPath.row].name!
+        } else {
+            cell.itemLabel.text = itemsArray[indexPath.row].name!
+        }
 
         return cell
     }
@@ -227,14 +248,65 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let selectedItem = itemsArray[indexPath.row]
+        var selectedItem: FoodItem
+        if isSearchBarActive {
+            selectedItem = searchResults[indexPath.row]
+        } else {
+            selectedItem = itemsArray[indexPath.row]
+        }
         selectedItems.append(selectedItem)
         tableView.reloadData()
+        updateTotalsLabel()
+    }
+}
+
+extension MainViewController: SelectedItemsCellDelegate {
+    func didChangeQuantity(cellId: Int, newValue: UInt) {
+        selectedItems[cellId].quantity = newValue
+        tableView.reloadData()
+        updateTotalsLabel()
     }
 }
 
 //MARK: UISearchBarDelegate
 
 extension MainViewController: UISearchBarDelegate {
-    
+
+    func filterContentForSearchText(searchText:String){
+        searchResults = self.itemsArray.filter({ (item: FoodItem) -> Bool in
+            return item.name!.localizedCaseInsensitiveContains(searchText)
+        })
+    }
+
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.length > 0 {
+            isSearchBarActive = true
+            filterContentForSearchText(searchText: searchText)
+            collectionView.reloadData()
+        } else {
+            isSearchBarActive = false
+            collectionView.reloadData()
+        }
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        isSearchBarActive = false
+        searchBar.resignFirstResponder()
+        searchBar.clear()
+        collectionView.reloadData()
+    }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        isSearchBarActive = true
+        view.endEditing(true)
+    }
+
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        isSearchBarActive = false
+        searchBar.setShowsCancelButton(true, animated: true)
+    }
+
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchBar.setShowsCancelButton(false, animated: false)
+    }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class DraggabaleImageView: UIImageView {
 
-    var lastLocation:CGPoint =  CGPoint.init(x: 0, y: 0)
+    var lastLocation: CGPoint =  CGPoint.init(x: 0, y: 0)
 
     override init(frame: CGRect) {
         super.init(frame: frame)

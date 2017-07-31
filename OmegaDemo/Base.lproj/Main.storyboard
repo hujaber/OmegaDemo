@@ -24,15 +24,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="g9v-Wf-K6a">
-                        <leftBarButtonItems>
-                            <barButtonItem title="Setup" id="IvM-yZ-6V0">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Clear" id="HhW-wa-Z16">
                                 <connections>
-                                    <action selector="setupAction:" destination="BYZ-38-t0r" id="Xws-yR-gxm"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Save" id="QNQ-XM-u38">
-                                <connections>
-                                    <action selector="saveAction:" destination="BYZ-38-t0r" id="KNk-U8-oQS"/>
+                                    <action selector="clearAction:" destination="BYZ-38-t0r" id="9J4-aD-iGT"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Load Data" id="EMj-tn-f2T">
@@ -40,12 +35,17 @@
                                     <action selector="loadDataAction:" destination="BYZ-38-t0r" id="qAZ-y2-okf"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Clear" id="HhW-wa-Z16">
+                            <barButtonItem title="Save" id="QNQ-XM-u38">
                                 <connections>
-                                    <action selector="clearAction:" destination="BYZ-38-t0r" id="9J4-aD-iGT"/>
+                                    <action selector="saveAction:" destination="BYZ-38-t0r" id="KNk-U8-oQS"/>
                                 </connections>
                             </barButtonItem>
-                        </leftBarButtonItems>
+                            <barButtonItem title="Setup" id="IvM-yZ-6V0">
+                                <connections>
+                                    <action selector="setupAction:" destination="BYZ-38-t0r" id="Xws-yR-gxm"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="clearBarBtn" destination="HhW-wa-Z16" id="SND-HK-pJx"/>
@@ -153,10 +153,17 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8vC-Lf-Ngv">
+                                                    <rect key="frame" x="52" y="16" width="94" height="29"/>
+                                                    <connections>
+                                                        <action selector="stepperValueChangeAction:" destination="Gmn-dE-0YX" eventType="valueChanged" id="Sse-VF-mo0"/>
+                                                    </connections>
+                                                </stepper>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="L3N-nR-u4j" firstAttribute="leading" secondItem="Mef-hd-gCr" secondAttribute="trailing" constant="20" id="0gw-wD-CP8"/>
                                                 <constraint firstItem="L3N-nR-u4j" firstAttribute="centerY" secondItem="E4e-sy-caA" secondAttribute="centerY" id="AGX-mi-81w"/>
+                                                <constraint firstItem="8vC-Lf-Ngv" firstAttribute="top" secondItem="E4e-sy-caA" secondAttribute="topMargin" constant="8" id="Gfn-3W-4Ib"/>
                                                 <constraint firstItem="MlE-KP-Qeh" firstAttribute="centerY" secondItem="E4e-sy-caA" secondAttribute="centerY" id="K4K-zY-gT1"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="L3N-nR-u4j" secondAttribute="trailing" id="PnH-Ih-n3P"/>
                                                 <constraint firstItem="Mef-hd-gCr" firstAttribute="centerY" secondItem="E4e-sy-caA" secondAttribute="centerY" id="TSd-Gq-qQd"/>
@@ -166,12 +173,14 @@
                                                 <constraint firstItem="xxb-Jc-Nn4" firstAttribute="top" secondItem="E4e-sy-caA" secondAttribute="topMargin" constant="3" id="ejg-bY-8RL"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="xxb-Jc-Nn4" secondAttribute="leading" id="fUe-PR-YTP"/>
                                                 <constraint firstItem="Mef-hd-gCr" firstAttribute="top" secondItem="E4e-sy-caA" secondAttribute="topMargin" constant="3" id="feo-gp-0ez"/>
+                                                <constraint firstItem="8vC-Lf-Ngv" firstAttribute="leading" secondItem="xxb-Jc-Nn4" secondAttribute="trailing" constant="33" id="mK1-dX-xxi"/>
                                                 <constraint firstItem="L3N-nR-u4j" firstAttribute="top" secondItem="E4e-sy-caA" secondAttribute="topMargin" constant="3" id="woh-qR-s8X"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="itemNameLabel" destination="MlE-KP-Qeh" id="XNc-EM-Sd1"/>
                                             <outlet property="quantityLabel" destination="xxb-Jc-Nn4" id="mGZ-NP-pZd"/>
+                                            <outlet property="quantityStepper" destination="8vC-Lf-Ngv" id="u3P-gv-wG3"/>
                                             <outlet property="totalPriceLabel" destination="L3N-nR-u4j" id="Fvm-bb-9fZ"/>
                                             <outlet property="unitPriceLabel" destination="Mef-hd-gCr" id="oXR-7c-pj2"/>
                                         </connections>
@@ -358,7 +367,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="DB &amp; Tables" id="nAb-Pf-fbS">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="Xdq-GG-f0G"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="6Fi-R3-zam"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -375,6 +384,9 @@
                         <outlet property="tableView" destination="gEb-ac-U1D" id="bh8-nn-Mnb"/>
                         <outlet property="totalsView" destination="SGd-qV-agq" id="dCJ-F9-3SU"/>
                         <outlet property="upperStackView" destination="zIX-Bu-Aa3" id="QRH-jU-JXT"/>
+                        <outletCollection property="totalSum" destination="xDw-6r-8yw" collectionClass="NSMutableArray" id="BC8-Kv-7HE"/>
+                        <outletCollection property="totalSum" destination="LGV-We-gki" collectionClass="NSMutableArray" id="EPy-Mw-hlk"/>
+                        <outletCollection property="totalSum" destination="lUo-jh-AMH" collectionClass="NSMutableArray" id="W85-4a-1R2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDE-00-pE1" userLabel="First Responder" sceneMemberID="firstResponder"/>

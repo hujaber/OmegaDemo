@@ -13,9 +13,16 @@ class SelectedItemsTableViewCell: UITableViewCell {
     @IBOutlet weak var itemNameLabel: UILabel!
     @IBOutlet weak var unitPriceLabel: UILabel!
     @IBOutlet weak var totalPriceLabel: UILabel!
+    @IBOutlet weak var quantityStepper: UIStepper!
+    weak var delegate: SelectedItemsCellDelegate?
+    public var cellId: Int?
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        quantityStepper.tintColor = UIColor.oliveColor
+        quantityStepper.stepValue = 1
+        quantityStepper.minimumValue = 1
+        quantityStepper.autorepeat = true
         // Initialization code
     }
 
@@ -25,15 +32,25 @@ class SelectedItemsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func setCell(itemName: String!, quantity: String!, unitPrice: String) {
+    func setCell(itemName: String!, quantity: UInt!, unitPrice: Float) {
         var totalPrice: Float = 0
-        if let qty = Float(quantity), let uPrice = Float(unitPrice) {
-            totalPrice = qty * uPrice
-        }
-        quantityLabel.text = quantity
+
+        totalPrice = Float(quantity) * unitPrice
+
+        quantityLabel.text = "\(quantity!)"
         itemNameLabel.text = itemName
-        unitPriceLabel.text = unitPrice
+        unitPriceLabel.text = "\(unitPrice)"
         totalPriceLabel.text = "\(totalPrice)"
     }
 
+    @IBAction func stepperValueChangeAction(_ sender: UIStepper) {
+        quantityLabel.text = "\(Int(quantityStepper.value))"
+        delegate?.didChangeQuantity(cellId: cellId!, newValue: UInt(Int(quantityStepper.value)))
+    }
+
 }
+
+protocol SelectedItemsCellDelegate: class {
+    func didChangeQuantity(cellId: Int, newValue: UInt)
+}
+
