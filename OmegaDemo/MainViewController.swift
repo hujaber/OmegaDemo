@@ -37,7 +37,7 @@ class MainViewController: BaseViewController {
         static let backgroundColor = UIColor.oliveColor
         static let cornerRadius: CGFloat = 10
     }
-
+    let collectionViewSize = CGSize.init(width: 100, height: 80)
     let collectionCellId = "CollectionCell"
 
     let itemsArray: [FoodItem] = [FoodItem.init(name: "Burger", unitPrice: 5500, quantity: 1),
@@ -236,7 +236,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100.0, height: 80.0)
+        return collectionViewSize
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -254,6 +254,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         } else {
             selectedItem = itemsArray[indexPath.row]
         }
+        selectedItem.quantity = 1 
         selectedItems.append(selectedItem)
         tableView.reloadData()
         updateTotalsLabel()
