@@ -23,20 +23,15 @@ class SelectedItemsTableViewCell: UITableViewCell {
         quantityStepper.stepValue = 1
         quantityStepper.minimumValue = 1
         quantityStepper.autorepeat = true
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
     func setCell(itemName: String!, quantity: UInt!, unitPrice: Float) {
         var totalPrice: Float = 0
-
         totalPrice = Float(quantity) * unitPrice
-
         quantityLabel.text = "\(quantity!)"
         itemNameLabel.text = itemName
         unitPriceLabel.text = "\(unitPrice)"

@@ -1,0 +1,17 @@
+PODS:
+  - PanelKit (1.0.0)
+  - SQLite.swift (0.11.3):
+    - SQLite.swift/standard (= 0.11.3)
+  - SQLite.swift/standard (0.11.3)
+
+DEPENDENCIES:
+  - PanelKit (~> 1.0)
+  - SQLite.swift (~> 0.11.3)
+
+SPEC CHECKSUMS:
+  PanelKit: 92b092db31574fed837025dcf96375c1a4afb303
+  SQLite.swift: 99b36c22084427f0abbeb957556ce1528cf10bb3
+
+PODFILE CHECKSUM: 4157744af7cb8a30a644671127f81c769871f1a6
+
+COCOAPODS: 1.2.1

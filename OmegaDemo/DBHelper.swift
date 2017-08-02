@@ -11,11 +11,16 @@ import SQLite
 
 class DBHelper {
 
-    static let dbName = "testDB"
-    
-    static func makeConnection() -> (Connection?, Bool) {
+    fileprivate static let dbName = "testDB"
+
+    enum CoordinatesTableColumn {
+        static let xColumn = Expression<Double>("x")
+        static let yColumn = Expression<Double>("y")
+    }
+
+    static func makeConnection() -> (db: Connection?,success: Bool) {
         do {
-            let path = Utility.getPath(filename: "testDB")
+            let path = Utilities.getPath(filename: dbName)
             let db = try Connection(path!)
             return (db, true)
         } catch {
@@ -34,4 +39,12 @@ class DBHelper {
         }
     }
 
+    static func insertInto(table: Table!, db: Connection!, x: Double, y: Double) -> (success: Bool, error: Error?) {
+        do {
+            try db.run(table.insert(CoordinatesTableColumn.xColumn <- x, CoordinatesTableColumn.yColumn <- y))
+            return (true, nil)
+        } catch  {
+            return (false, error)
+        }
+    }
 }

@@ -188,7 +188,7 @@
                                 </prototypes>
                             </tableView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0XQ-ox-UW7">
-                                <rect key="frame" x="496" y="122" width="577" height="679"/>
+                                <rect key="frame" x="500" y="122" width="592" height="679"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mxc-m3-OdJ">
                                     <size key="itemSize" width="79" height="100"/>
@@ -283,10 +283,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGd-qV-agq">
-                                <rect key="frame" x="20" y="565" width="468" height="120"/>
+                                <rect key="frame" x="20" y="565" width="472" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total: 102000LL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDw-6r-8yw">
-                                        <rect key="frame" x="336" y="92" width="124" height="20.5"/>
+                                        <rect key="frame" x="340" y="92" width="124" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -304,13 +304,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax: 0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUo-jh-AMH">
-                                        <rect key="frame" x="389.5" y="8" width="70.5" height="20.5"/>
+                                        <rect key="frame" x="393.5" y="8" width="70.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total: 102000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGV-We-gki">
-                                        <rect key="frame" x="354.5" y="36.5" width="105.5" height="20.5"/>
+                                        <rect key="frame" x="358.5" y="36.5" width="105.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -334,7 +334,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SGd-qV-agq" firstAttribute="top" secondItem="gEb-ac-U1D" secondAttribute="bottom" constant="8" id="0fM-Nf-uOm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0XQ-ox-UW7" secondAttribute="trailing" constant="19" id="4zr-2G-cR8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0XQ-ox-UW7" secondAttribute="trailing" id="4zr-2G-cR8"/>
                             <constraint firstAttribute="leadingMargin" secondItem="gEb-ac-U1D" secondAttribute="leading" id="8eZ-Py-HBn"/>
                             <constraint firstItem="VFd-BZ-aTh" firstAttribute="top" secondItem="zIX-Bu-Aa3" secondAttribute="bottom" constant="8" id="8vs-Ix-acw"/>
                             <constraint firstItem="zIX-Bu-Aa3" firstAttribute="top" secondItem="gEb-ac-U1D" secondAttribute="bottom" constant="136" id="C1y-Ym-DdF"/>
@@ -342,7 +342,7 @@
                             <constraint firstItem="oBn-MX-T62" firstAttribute="width" secondItem="gEb-ac-U1D" secondAttribute="width" id="Fow-H2-hNg"/>
                             <constraint firstItem="gEb-ac-U1D" firstAttribute="top" secondItem="oBn-MX-T62" secondAttribute="bottom" constant="7" id="HbH-fA-XIu"/>
                             <constraint firstItem="VFd-BZ-aTh" firstAttribute="height" secondItem="zIX-Bu-Aa3" secondAttribute="height" id="In7-ct-K78"/>
-                            <constraint firstItem="0XQ-ox-UW7" firstAttribute="leading" secondItem="gEb-ac-U1D" secondAttribute="trailing" constant="8" id="OWX-VY-k8s"/>
+                            <constraint firstItem="0XQ-ox-UW7" firstAttribute="leading" secondItem="gEb-ac-U1D" secondAttribute="trailing" constant="12" id="OWX-VY-k8s"/>
                             <constraint firstAttribute="leadingMargin" secondItem="SGd-qV-agq" secondAttribute="leading" id="Qfx-Vr-fr6"/>
                             <constraint firstItem="gEb-ac-U1D" firstAttribute="top" secondItem="0XQ-ox-UW7" secondAttribute="top" id="Rjn-UB-gft"/>
                             <constraint firstItem="gEb-ac-U1D" firstAttribute="top" secondItem="Y2D-Vv-eGe" secondAttribute="bottom" constant="58" id="W0w-Wc-WkG"/>

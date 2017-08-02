@@ -11,7 +11,7 @@
 		631B3DCA1F289A3500101100 /* SelectedItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631B3DC91F289A3500101100 /* SelectedItemsTableViewCell.swift */; };
 		632878801F20832400D77207 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328787F1F20832400D77207 /* DBHelper.swift */; };
 		632878821F20857F00D77207 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632878811F20857F00D77207 /* BaseViewController.swift */; };
-		6331FEBC1F2B32BD00EA3728 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FEBB1F2B32BD00EA3728 /* Utility.swift */; };
+		6331FEBC1F2B32BD00EA3728 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FEBB1F2B32BD00EA3728 /* Utilities.swift */; };
 		6331FEBE1F2B402900EA3728 /* testDB in Resources */ = {isa = PBXBuildFile; fileRef = 6331FEBD1F2B402900EA3728 /* testDB */; };
 		6331FEC11F2B67DC00EA3728 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FEC01F2B67DC00EA3728 /* FoodItem.swift */; };
 		63675FB51F1F51F500158F11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675FB41F1F51F500158F11 /* AppDelegate.swift */; };
@@ -33,7 +33,7 @@
 		631B3DC91F289A3500101100 /* SelectedItemsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedItemsTableViewCell.swift; sourceTree = "<group>"; };
 		6328787F1F20832400D77207 /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		632878811F20857F00D77207 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		6331FEBB1F2B32BD00EA3728 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		6331FEBB1F2B32BD00EA3728 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		6331FEBD1F2B402900EA3728 /* testDB */ = {isa = PBXFileReference; lastKnownFileType = file; path = testDB; sourceTree = "<group>"; };
 		6331FEC01F2B67DC00EA3728 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		63675FB11F1F51F500158F11 /* OmegaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmegaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,7 +163,7 @@
 				63675FBB1F1F51F500158F11 /* Assets.xcassets */,
 				63675FC01F1F51F500158F11 /* Info.plist */,
 				63CF133E1F262E9900C64594 /* Extensions.swift */,
-				6331FEBB1F2B32BD00EA3728 /* Utility.swift */,
+				6331FEBB1F2B32BD00EA3728 /* Utilities.swift */,
 			);
 			path = OmegaDemo;
 			sourceTree = "<group>";
@@ -311,7 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6331FEBC1F2B32BD00EA3728 /* Utility.swift in Sources */,
+				6331FEBC1F2B32BD00EA3728 /* Utilities.swift in Sources */,
 				63675FB71F1F51F500158F11 /* ViewController.swift in Sources */,
 				631B3DCA1F289A3500101100 /* SelectedItemsTableViewCell.swift in Sources */,
 				631B3DC81F28977000101100 /* ItemsCollectionViewCell.swift in Sources */,

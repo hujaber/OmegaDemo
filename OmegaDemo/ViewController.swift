@@ -12,7 +12,7 @@ import SQLite
 class ViewController: BaseViewController {
 
     var db: Connection!
-    var tableArray = Array<DraggabaleImageView>()
+    var tableArray = [DraggabaleImageView]()
     var numberOfTables: Int = 0
     let kTableImageWH: CGFloat = 70.0
 
@@ -26,12 +26,11 @@ class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         connectToDB()
-        navigationController?.navigationItem.hidesBackButton = false
     }
 
     func connectToDB() {
-        if DBHelper.makeConnection().1 {
-            db = DBHelper.makeConnection().0
+        if DBHelper.makeConnection().success {
+            db = DBHelper.makeConnection().db
         } else {
             showAlert(title: "", message: "Connection to Database failed")
         }
@@ -39,7 +38,6 @@ class ViewController: BaseViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if numberOfTables == 0 {
-            showAlert(title:"", message: "Please Setup first")
             return
         }
         let touch = touches.first
@@ -121,15 +119,13 @@ class ViewController: BaseViewController {
             for imgViews in tableArray {
                 let xF = imgViews.frame.origin.x
                 let yF = imgViews.frame.origin.y
-                let x = Expression<Double>("x")
-                let y = Expression<Double>("y")
-                do {
-                    try db.run(coord.insert(x <- Double(xF), y <- Double(yF)))
-
-                } catch let error as NSError {
-                    print(error.localizedDescription + "insert failed")
+                if !DBHelper.insertInto(table: coord, db: db, x: Double(xF), y: Double(yF)).success {
+                    guard let error = DBHelper.insertInto(table: coord, db: db, x: Double(xF), y: Double(yF)).error else {
+                        return
+                    }
+                    let alertController =  UIAlertController.init(title: "Error", error: error, defaultActionButtonTitle: "OK", tintColor: nil)
+                    alertController.show(animated: true, vibrate: true, completion: nil)
                 }
-                
             }
         } else {
             showAlert(title: "", message: "Operation failed. DB failed to delete entries for table: coord")

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Utility {
+class Utilities {
     
     static func getPath(filename: String) -> String? {
         let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first

@@ -15,10 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        UINavigationBar.appearance().barTintColor = UIColor.oliveColor
-        UINavigationBar.appearance().tintColor = UIColor.white
-        UIApplication.shared.statusBarStyle = .lightContent
-        Utility.copyFiles(fileName: "testDB")
+        setupNavigationController()
+        Utilities.copyFiles(fileName: "testDB")
         return true
     }
 
@@ -44,6 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    //MARK: - Private Methods
+
+    func setupNavigationController() {
+        UINavigationBar.appearance().barTintColor = UIColor.oliveColor
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
 
 }
 
