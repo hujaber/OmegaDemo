@@ -7,6 +7,7 @@ target 'OmegaDemo' do
 pod 'SQLite.swift', '~> 0.11.3'
 
 pod 'PanelKit', '~> 1.0'
+pod 'SVProgressHUD'
 
 
 end

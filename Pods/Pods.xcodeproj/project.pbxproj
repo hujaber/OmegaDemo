@@ -7,168 +7,214 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0251C4C415C3390907FD9F36A87DA9FB /* PanelManager+Expose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D38CDBEC62CFAB80F74EDF30FB2EE /* PanelManager+Expose.swift */; };
-		048957297FFB32F1920A814DCB757074 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748157A6A042689A85D157B1BB28AA34 /* Helpers.swift */; };
-		0B9A344C26746C71EEEEC21F6B8C592E /* BlockBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EF432E1A66215BE85B1D9BB227E12A /* BlockBarButtonItem.swift */; };
-		0FC3D81AD6061E6193D64F88E0495E15 /* PanelNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E091A1DA399484107922865E1D9D393 /* PanelNavigationController.swift */; };
-		19866DEFE8B1760D479999E86710CE80 /* PanelManager+Pinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7A685CAA3603BE8A1C6EF405088AE /* PanelManager+Pinning.swift */; };
-		1AB6D8A33EB49437B997BA12C6265187 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC6BAACC9A0620D2526A896485AB4BD /* Schema.swift */; };
-		1BC6CCA2DD4369D3CF17B9651982193D /* UIViewController+Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB2372D8E7CC83A0BC0C9258E750CBB /* UIViewController+Popover.swift */; };
-		1FE71067F53C5BBF951640F583D08910 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EF7755E84685741FD2F137CC02E356 /* Foundation.swift */; };
-		23EA0876A3B0E0E8BC54528526DE14B2 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B7A5F6B103027D5E1DB151FE895050 /* Collation.swift */; };
-		2504F77E27263300A87A684C18E6755D /* PanelManager+Dragging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361CD785C7B79FFE7897A3A029FA79D /* PanelManager+Dragging.swift */; };
-		25B46793ED413C3A138234C953520EEE /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48362EA7CF5878A7FD2483C4D3F43CF8 /* PanelViewController.swift */; };
-		2EA0DC6D4C1CB04C0CF850ADFDFB9371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3908D28688D54BAFF4CD5975290195CF /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AA6F00D8064D1773D220BE29D399C /* FTS5.swift */; };
-		3F8A1E7B77A2DD315E9614CBE0944A8D /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = B673AF8427287C2793793B15696FB6F6 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44EE16797915409FB960704B84A46E11 /* PanelContentDelegate+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EE5200317BD2826526C65445DBDDE /* PanelContentDelegate+Navigation.swift */; };
-		4D09FB9C8397CF8523CCF12CB00191F8 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E914CB9BBFC0B9EA5B55D6AF6D814A /* CoreFunctions.swift */; };
-		4ECB4474BCC2DCF2E0BEE70001593318 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386986176848CA3754EC1DBA0810BDE /* Query.swift */; };
-		50A43729937A05FA91616BB5758DE486 /* PanelViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6982439C79BEAD0FF1C9DE3371945E /* PanelViewController+Keyboard.swift */; };
-		5176E2D7B991E1FE43654DD15183ACE9 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = D13C45947D40C90DF8720F061B96DA7B /* SQLite-Bridging.m */; };
-		561F60FFD53EC11387CA91FE391024AE /* Pods-OmegaDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D3B75B8F039EDB136B574340A45575 /* Pods-OmegaDemo-dummy.m */; };
-		5794699C97240FC6A997AE603CD89838 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A6536FFBC8DE1149C05423CA8A5 /* Connection.swift */; };
-		5DD4B3E50336BBFE54F78049DE0F22DC /* PanelViewController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE17BEAE5F0E2B32C393EBCFAFA8384 /* PanelViewController+Appearance.swift */; };
-		61A32154C674E1432AE312F528227DFB /* PanelManager+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEBEC6E30F0979DBF44BEB70CE2B41C /* PanelManager+Default.swift */; };
-		6BFCF513EF7112D838C410DE0FC3E8AF /* PanelManager+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1BF6CFAA83C449794D7DD94786A060 /* PanelManager+AutoLayout.swift */; };
-		738BFF065B63B65C12E478F7135519E6 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA89762D10D678536875768BEFE099D /* Statement.swift */; };
-		7419E4244F79FF00925209404C87F8F1 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD43B0C8ABFBD13B9758DFAA45BDB5A /* Operators.swift */; };
-		7427A7F8DC374DA89E3CA8593C53E768 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B957216F97CA66D1724BE7318880DB /* Value.swift */; };
-		7E9D77614F660C6C43490B70A1B3489A /* PanelViewController+Dragging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0424F7E6302A5A60EC66D281487300 /* PanelViewController+Dragging.swift */; };
-		7ECBA9C42C7BD40C11E87AEA668A373A /* PanelManager+Closing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF6B01272401407EA68EF9A8572AD9 /* PanelManager+Closing.swift */; };
-		8846C9AF6082A07E897B20A6383E2399 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8897B631FE38108CC43B2BD9C0BCEB06 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E656CD659E98FF4B33213686597E5188 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CEC1542895C73D67134BDA6DC65DCA6 /* Pods-OmegaDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A04643FF28D98357EB2BAAA7BF702E8 /* Pods-OmegaDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D212FF9F592866ADE0B58566C8A9A1A /* PanelPinSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466298DE8C4BCE3195B5C035BC15474B /* PanelPinSide.swift */; };
-		8EFDE0F7B740CDEC6AE04CC1F3ADD4DB /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6ED068F9E2C3831CB1F0A677CCB7B2 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		971A0F98377AEA6294DAB857316A436F /* PanelContentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EED2393B10DE6B6DE6E12E1FEDB33 /* PanelContentDelegate.swift */; };
-		99090024372C53F00F7073F5AA63DC39 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A01B0E9BFD65634A3C9AC603C0F40F5 /* Expression.swift */; };
-		9A21A8FC01F0E199F2996B125237EB09 /* PanelContentDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B303EC21B9584497FE2FE67A84C2BB /* PanelContentDelegate+Default.swift */; };
-		9FD2350956A72F18284602B1EDCF526A /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBA2C40C748964DC9AEFB46DBF8DAE /* AggregateFunctions.swift */; };
-		A06103065BA8DA33621EDAB9F224CA27 /* PanelViewController+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C16EA8FAB491D62628F1AD8484588 /* PanelViewController+States.swift */; };
-		A0C2B643D2EF68F65AFB696378F859E2 /* BlockGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21973358B9549FDEC47E1BFFC6AF387 /* BlockGestureRecognizer.swift */; };
-		A14503990CE2B29F415F18B2A74F480D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		AA80EA9698D0602AD2D9919F0D80FBFF /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F613CEA0295CD0200406E6F7B4BC1 /* CustomFunctions.swift */; };
-		AF4D86417D24CE6A7DA2E9EAAC715500 /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54983D271EAFB2EEFC9C3374833507A4 /* AssociatedObject.swift */; };
-		B050F84810EEF2D234255EDEFE8741B0 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC643BEA60BA05E9989CC7249A5D6D0 /* RTree.swift */; };
-		B122E7721829904BBFD545FD8164E6BE /* PanelKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2768ED6ACF017C9468792572B45F6A01 /* PanelKit-dummy.m */; };
-		B88E8B0BB33F02EE12ABD51C27AF2823 /* CGRect+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BA2259579F7D95C93EB2C4B2712934 /* CGRect+Center.swift */; };
-		B937743BD74BB0D665D11942CA4C395E /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C78A7C579AC30003FC7E1235C975A /* Blob.swift */; };
-		C5804E007B0F59CA073011FD24BBC007 /* PanelViewController+Offscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999D78FF884BFE76CF65B99CF0FA8E1 /* PanelViewController+Offscreen.swift */; };
-		CE9FCB0F5527DC5D4A4F920E497A6017 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B81F10576C3759FECBFA10447509B47 /* Constants.swift */; };
-		D2BE327DCCE072FB8A5AF5216A61C57B /* PanelManager+Offscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E5FAC58A4CF74E5E1C4677B89FEBC /* PanelManager+Offscreen.swift */; };
-		DA9221906C7135FEAA466D6E3F89682C /* PanelKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 947717DDE35840F4B69305B13C4EAE2E /* PanelKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD3B32698120306195FDED74283D09B0 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FAB29EEBB6ECAC50786BB862F228CA /* Setter.swift */; };
-		DF7A45E2B43FC7E6A56518B8A8E638BE /* PanelManager+Floating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EE0C8E4B623E48B8CB0348B479DD57 /* PanelManager+Floating.swift */; };
-		ECF03B98840E1B4D74ABC9726FEFD2C5 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015EEDA2EA00969AB729ADD3D3AC9093 /* FTS4.swift */; };
-		EFA79BE264052C50120563C07D5B6F35 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B920EFE332C0C052482B9702BA60F /* LogLevel.swift */; };
-		F49809A1B632003BF5109B942101A2E4 /* PanelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F0ED75B8B268F9D153A15E80EFFE3B /* PanelManager.swift */; };
-		F4E6575531368CF05BB76923926599FA /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B56C378CC8F2CDCFAC9F85DE5F2FE2 /* SQLite.swift-dummy.m */; };
-		FEEC69B969C0FFB61F93BDBE070F8ACA /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C756607860A5E66CFCA408F5D84FF3A /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		009CB59E35E80CA673B76E087DA86737 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA4FED878B1D9F21F6144ED37CE97169 /* SVProgressHUD.bundle */; };
+		0251C4C415C3390907FD9F36A87DA9FB /* PanelManager+Expose.swift in Sources */ = {isa = PBXBuildFile; fileRef = D720E11B046AF3BA162E396F77C7DE50 /* PanelManager+Expose.swift */; };
+		0549DECDC70C76B7A4BF854CA53D7CFF /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F7856796D364D1488FA3DD99BA251 /* CustomFunctions.swift */; };
+		0B9A344C26746C71EEEEC21F6B8C592E /* BlockBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F2882B0C01B3F59DA96848E4A86B20 /* BlockBarButtonItem.swift */; };
+		0FC3D81AD6061E6193D64F88E0495E15 /* PanelNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91A7600967EE0A63021D971004BA7E /* PanelNavigationController.swift */; };
+		13122C617B36042192F6DA1F19433012 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376B6A8D414725A813CF6961D91F936D /* Expression.swift */; };
+		19777CA539764D0DB51F4FFE3C516034 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C046333CA35BCE997E5261E840CEB9 /* SVProgressAnimatedView.m */; };
+		19866DEFE8B1760D479999E86710CE80 /* PanelManager+Pinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F9948D35A9C1F509D35E931641496F /* PanelManager+Pinning.swift */; };
+		1BC6CCA2DD4369D3CF17B9651982193D /* UIViewController+Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA25F6CE5E20BC5E54CC40B4BE3388C /* UIViewController+Popover.swift */; };
+		1DEAEB2BCDBCBCD06D75B8B7CFAC91B0 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 823AA5DE1B90CE88A8E8DF25EF9DD8D8 /* SVIndefiniteAnimatedView.m */; };
+		1F24A847E831FA4156924A972D959B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		238F78B9D0742DB0C36707F1FBCFD6A6 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA121A60E632F0E4A68EC6135FA6C53A /* SVRadialGradientLayer.m */; };
+		24DAF9C8120897A4B388B274AF7853D9 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A01A44F4FC2B58F84DD95631332245 /* Query.swift */; };
+		2504F77E27263300A87A684C18E6755D /* PanelManager+Dragging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F641F964A5749676BB0CBD9650C47331 /* PanelManager+Dragging.swift */; };
+		25AAFC008C6F205229304639229B494B /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826CD9674FD333FCAD1AC6DE9D51EC3 /* Schema.swift */; };
+		25B46793ED413C3A138234C953520EEE /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888703B9EE4798DF7D088405C9446E42 /* PanelViewController.swift */; };
+		28BF2B1EE0045A0536788317E95A421E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C7D91BDFACC0D927A991B38253A912 /* Helpers.swift */; };
+		2EF7F818AEF8541D9FFCF4F6775FFF80 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6C1A88C281F672CD2139735044A6D2 /* Foundation.swift */; };
+		2F858DDECEC4D60493B49B03035F5A76 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1F51BCE1E5162EB5F10B254B4EFE03 /* Collation.swift */; };
+		371D8432AD522168B28CCC2E87846AA0 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1129ED18BC63593F1F99D886DD7F08C0 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EE0D9F4BC9C4E199DD8F3F0CD882381 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E506C8FD07BB1A1C2C820BC7776DD4 /* Blob.swift */; };
+		435412FD9DE8E8398F2D0D3576192F93 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FD973A2D981D246F4875DAE75B8622 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44EE16797915409FB960704B84A46E11 /* PanelContentDelegate+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB64D0539E9DD0E261E50719198357D /* PanelContentDelegate+Navigation.swift */; };
+		4A13033A3124AB3DDA8651E78B7E78CB /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F4E3DAEBA4927E136DF289FA1642 /* FTS5.swift */; };
+		4FD25CADB3B80965468742DD920BB59A /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB4D1897B9A49267CEF42BBBD27C908A /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50A43729937A05FA91616BB5758DE486 /* PanelViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5104BE4E2D8468627911A7CCDD0F1BED /* PanelViewController+Keyboard.swift */; };
+		56448F1A6A31BD2E5A673737DA02F883 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = DDCFF218F40EBC4BD1408CC2BA36C626 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A4C128E242D7F9BB8A146441721CCF7 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BD87C1B4A2CD6E9DDF84FAC569705 /* SQLite.swift-dummy.m */; };
+		5DD4B3E50336BBFE54F78049DE0F22DC /* PanelViewController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DC312A4B4646347CBB17C8A3DA0CB /* PanelViewController+Appearance.swift */; };
+		61A32154C674E1432AE312F528227DFB /* PanelManager+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48395727448530496F24BF6D8F7CEF22 /* PanelManager+Default.swift */; };
+		65EB8500D6C7D7EB0529A1ED4BA0C477 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E89F97F7E5DD1FE6C9FCCDCF5E992A07 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BFCF513EF7112D838C410DE0FC3E8AF /* PanelManager+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616B4CDE755B5761E2DF002D322A5E6C /* PanelManager+AutoLayout.swift */; };
+		7E9D77614F660C6C43490B70A1B3489A /* PanelViewController+Dragging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD13ECB311F9799300DFB4F8EA1952F /* PanelViewController+Dragging.swift */; };
+		7ECBA9C42C7BD40C11E87AEA668A373A /* PanelManager+Closing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0374E5694990AB63672AA1892C83612 /* PanelManager+Closing.swift */; };
+		8793907612B8787F1B71ACE6948A4F0D /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA08DB2A592BC3269FB9B062505A /* SVProgressHUD.m */; };
+		8828AE0FF1BD36F81A14D2B8D4D1230B /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA570EB0BECC42851A63CE05111003 /* CoreFunctions.swift */; };
+		8CFF61D90BDE000240921135DA080A27 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CFEEAC16E5EDC8BF26872C47B2798 /* FTS4.swift */; };
+		8D212FF9F592866ADE0B58566C8A9A1A /* PanelPinSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251307395CFAB48CD49877D80D30C7B /* PanelPinSide.swift */; };
+		971A0F98377AEA6294DAB857316A436F /* PanelContentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAB496D2F24C3896897128A46FD7E6A /* PanelContentDelegate.swift */; };
+		98DF5854F035C1CD9F803388D326E684 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 9975315B85ABBD711A1CB10150BCA118 /* SQLite-Bridging.m */; };
+		9935D5F9B0BDC9FDA28D9764E087DBC0 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = BDCD3901CB625104D7B293E446ADDF61 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9A21A8FC01F0E199F2996B125237EB09 /* PanelContentDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AA237C19815A80299FDA034B274DAB /* PanelContentDelegate+Default.swift */; };
+		9C10040876E811C985A8FCCA49096F12 /* Pods-OmegaDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A04643FF28D98357EB2BAAA7BF702E8 /* Pods-OmegaDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A06103065BA8DA33621EDAB9F224CA27 /* PanelViewController+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B476D911638BF3EE424BD49C531188 /* PanelViewController+States.swift */; };
+		A0C2B643D2EF68F65AFB696378F859E2 /* BlockGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57582200AAD8A5B7BE1B6EECA58BE233 /* BlockGestureRecognizer.swift */; };
+		A14503990CE2B29F415F18B2A74F480D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		A972E325A05C6FA47CA2F78D133EED99 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3505520EDB1606EC97AFE6347DDB62B /* Setter.swift */; };
+		AF4D86417D24CE6A7DA2E9EAAC715500 /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A84DB067C6D9D2D0000285BBFB00F6 /* AssociatedObject.swift */; };
+		AFFE1883F68890B70AC2AC77B771223D /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0549BB7978BE4AADCAC3D99B1DCC7CC /* Operators.swift */; };
+		B122E7721829904BBFD545FD8164E6BE /* PanelKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7850C5E217CD4A93559714E52D73DA6 /* PanelKit-dummy.m */; };
+		B4B7ABEC94622BE52113046E65B39B98 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C033BAF2F803B77FC4F7964E1BDB5446 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4CCAABD1DB04FB752704A401E25F8D9 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0EC919256F757188D2680A08FE26 /* Value.swift */; };
+		B88E8B0BB33F02EE12ABD51C27AF2823 /* CGRect+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FE8654AC3E959244B174C3D3FE437 /* CGRect+Center.swift */; };
+		C5804E007B0F59CA073011FD24BBC007 /* PanelViewController+Offscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE46502681CA0961534BD8D571BD352 /* PanelViewController+Offscreen.swift */; };
+		C664EB83FF5ACE7298CAB46BD8EC2143 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */; };
+		CA8B6D8DE5067A8EBA67DE4F929E8399 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF71144CF7D9BC39E5CE2916CDD6659D /* AggregateFunctions.swift */; };
+		CE9FCB0F5527DC5D4A4F920E497A6017 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E229C2F78ABFDD2C8D340CD1892835 /* Constants.swift */; };
+		CEC9235900823AD87B39B090C613E893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		D2BE327DCCE072FB8A5AF5216A61C57B /* PanelManager+Offscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569489F21089DA3D169B49213DD5F035 /* PanelManager+Offscreen.swift */; };
+		D9E992A7C6CCD673A43757CCE696D766 /* Pods-OmegaDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D3B75B8F039EDB136B574340A45575 /* Pods-OmegaDemo-dummy.m */; };
+		DA9221906C7135FEAA466D6E3F89682C /* PanelKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3109CE5D5C3C99C70EA538891FF118E5 /* PanelKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF7A45E2B43FC7E6A56518B8A8E638BE /* PanelManager+Floating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C853EC466E096DFBA453F2E1D4B1E99 /* PanelManager+Floating.swift */; };
+		E222FEB3B322D533250CE3B43D82F10E /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2661896AEE5A642E793912A84DCA05 /* RTree.swift */; };
+		E9FD2287C91377F661807B36AB35D98B /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C693B3A2FC047BB4D202A976C2C66F /* Statement.swift */; };
+		EFA79BE264052C50120563C07D5B6F35 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D41CF73D43583EE000AF798318707 /* LogLevel.swift */; };
+		F26BA1AA540D9DCE06553A3B4F0AAD4E /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00D52A9835E941003FA1BD2E6AF1CA4 /* Connection.swift */; };
+		F49809A1B632003BF5109B942101A2E4 /* PanelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F9A7DA7D469ED5D13E0745B39B3AD /* PanelManager.swift */; };
+		F4AE21A93DA5363A4513FC2467F7FA5C /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E47570F061B3BC70140CAE67941BB32 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9F70430A87136B28979FB341CEE19C6 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F195DB6C0433CBECF47EE20661B2E9F /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1B891939D18A18BB29D537BE22AD5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		FFC580F8C298DBEB3CCE1673CE6B93AA /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6093C3643461B9A0C3E99DC9D16A9 /* SVProgressHUD-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6A7712674CC0E13BE30AC9D787E8E460 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FEE990F7309A8EC3659333517B4FA404;
-			remoteInfo = SQLite.swift;
-		};
-		D2F753339569461780D7E27FCA2D994B /* PBXContainerItemProxy */ = {
+		2F6E5B8C75696EBC6AA8D3C1358A362B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CDBAD062B9A5E96EB764CE55D11C7095;
 			remoteInfo = PanelKit;
 		};
+		C1BE74C4012D440FD3995343719EDBC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6DB3E8BE3CD58E3C5C7F47BEA70A8A9;
+			remoteInfo = SVProgressHUD;
+		};
+		F67C8AFC600ABA034FAAA046D82588C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A470933FEEB96CE440E8C20EE5F4A25C;
+			remoteInfo = SQLite.swift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00F0ED75B8B268F9D153A15E80EFFE3B /* PanelManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanelManager.swift; path = PanelKit/PanelManager/PanelManager.swift; sourceTree = "<group>"; };
-		015EEDA2EA00969AB729ADD3D3AC9093 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
-		0B81F10576C3759FECBFA10447509B47 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = PanelKit/Model/Constants.swift; sourceTree = "<group>"; };
-		0C589BB73211B7C9D4E2C4958EA64EF5 /* PanelKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PanelKit-prefix.pch"; sourceTree = "<group>"; };
-		0C756607860A5E66CFCA408F5D84FF3A /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
-		0CFF6B01272401407EA68EF9A8572AD9 /* PanelManager+Closing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Closing.swift"; path = "PanelKit/PanelManager/PanelManager+Closing.swift"; sourceTree = "<group>"; };
-		0E091A1DA399484107922865E1D9D393 /* PanelNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanelNavigationController.swift; path = PanelKit/Controller/PanelNavigationController.swift; sourceTree = "<group>"; };
-		0E9C78A7C579AC30003FC7E1235C975A /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
-		100C3126417329FA4BC810147038A5DC /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
-		187AA6F00D8064D1773D220BE29D399C /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
-		1A01B0E9BFD65634A3C9AC603C0F40F5 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
-		1C0424F7E6302A5A60EC66D281487300 /* PanelViewController+Dragging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelViewController+Dragging.swift"; path = "PanelKit/Controller/PanelViewController+Dragging.swift"; sourceTree = "<group>"; };
-		20EF7755E84685741FD2F137CC02E356 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
-		225EE5200317BD2826526C65445DBDDE /* PanelContentDelegate+Navigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelContentDelegate+Navigation.swift"; path = "PanelKit/PanelContentDelegate/PanelContentDelegate+Navigation.swift"; sourceTree = "<group>"; };
-		2768ED6ACF017C9468792572B45F6A01 /* PanelKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PanelKit-dummy.m"; sourceTree = "<group>"; };
-		2AD994FDE9EB2534C1918B364444A12B /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
-		32BBA2C40C748964DC9AEFB46DBF8DAE /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
-		3FE17BEAE5F0E2B32C393EBCFAFA8384 /* PanelViewController+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelViewController+Appearance.swift"; path = "PanelKit/Controller/PanelViewController+Appearance.swift"; sourceTree = "<group>"; };
-		4361CD785C7B79FFE7897A3A029FA79D /* PanelManager+Dragging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Dragging.swift"; path = "PanelKit/PanelManager/PanelManager+Dragging.swift"; sourceTree = "<group>"; };
-		43E914CB9BBFC0B9EA5B55D6AF6D814A /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
-		447F613CEA0295CD0200406E6F7B4BC1 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
-		466298DE8C4BCE3195B5C035BC15474B /* PanelPinSide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanelPinSide.swift; path = PanelKit/Model/PanelPinSide.swift; sourceTree = "<group>"; };
-		48362EA7CF5878A7FD2483C4D3F43CF8 /* PanelViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanelViewController.swift; path = PanelKit/Controller/PanelViewController.swift; sourceTree = "<group>"; };
-		4C4298FBC8BA564225863BD58269C2AE /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		02B476D911638BF3EE424BD49C531188 /* PanelViewController+States.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelViewController+States.swift"; path = "PanelKit/Controller/PanelViewController+States.swift"; sourceTree = "<group>"; };
+		0A9D41CF73D43583EE000AF798318707 /* LogLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogLevel.swift; path = PanelKit/Model/LogLevel.swift; sourceTree = "<group>"; };
+		0D33BBC977207540CBAC5AF16C2BF18A /* Pods_OmegaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OmegaDemo.framework; path = "Pods-OmegaDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1129ED18BC63593F1F99D886DD7F08C0 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		140DC312A4B4646347CBB17C8A3DA0CB /* PanelViewController+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelViewController+Appearance.swift"; path = "PanelKit/Controller/PanelViewController+Appearance.swift"; sourceTree = "<group>"; };
+		15230E1212552F7850C37B2E4919F23C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E47570F061B3BC70140CAE67941BB32 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		2FAB496D2F24C3896897128A46FD7E6A /* PanelContentDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanelContentDelegate.swift; path = PanelKit/PanelContentDelegate/PanelContentDelegate.swift; sourceTree = "<group>"; };
+		30A6FACA522E31E8B9A9E4B78EB591E7 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		3109CE5D5C3C99C70EA538891FF118E5 /* PanelKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PanelKit-umbrella.h"; sourceTree = "<group>"; };
+		3189A9DBB180F64CC9C9ED734DDF8DEE /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		32E229C2F78ABFDD2C8D340CD1892835 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = PanelKit/Model/Constants.swift; sourceTree = "<group>"; };
+		342BD87C1B4A2CD6E9DDF84FAC569705 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		376B6A8D414725A813CF6961D91F936D /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		3826CD9674FD333FCAD1AC6DE9D51EC3 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		3E3ED3BB9281D7F9C471B165852159DB /* PanelKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PanelKit.modulemap; sourceTree = "<group>"; };
+		3F91A7600967EE0A63021D971004BA7E /* PanelNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanelNavigationController.swift; path = PanelKit/Controller/PanelNavigationController.swift; sourceTree = "<group>"; };
+		40C046333CA35BCE997E5261E840CEB9 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		44277C25D4FD45F5E11F81D8DE970137 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44562395391C074780933D65A7FEA624 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45667A7EB033A0DD63B4BCBF0086ECA1 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		48395727448530496F24BF6D8F7CEF22 /* PanelManager+Default.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Default.swift"; path = "PanelKit/PanelManager/PanelManager+Default.swift"; sourceTree = "<group>"; };
+		49A7489C59F41CB503B5611506681818 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1AE4CDD4FA7E5BD6442CF350786039 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		4DD5EA08DB2A592BC3269FB9B062505A /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		4F195DB6C0433CBECF47EE20661B2E9F /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
+		500F75CE072AE35977A697376075DED4 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		5104BE4E2D8468627911A7CCDD0F1BED /* PanelViewController+Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelViewController+Keyboard.swift"; path = "PanelKit/Controller/PanelViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		536F7856796D364D1488FA3DD99BA251 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
 		548FF0AE5ED8522AF071C75BC8A25D68 /* Pods-OmegaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OmegaDemo.release.xcconfig"; sourceTree = "<group>"; };
-		54983D271EAFB2EEFC9C3374833507A4 /* AssociatedObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociatedObject.swift; path = PanelKit/Model/AssociatedObject.swift; sourceTree = "<group>"; };
+		54F9948D35A9C1F509D35E931641496F /* PanelManager+Pinning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Pinning.swift"; path = "PanelKit/PanelManager/PanelManager+Pinning.swift"; sourceTree = "<group>"; };
+		54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		569489F21089DA3D169B49213DD5F035 /* PanelManager+Offscreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Offscreen.swift"; path = "PanelKit/PanelManager/PanelManager+Offscreen.swift"; sourceTree = "<group>"; };
+		57582200AAD8A5B7BE1B6EECA58BE233 /* BlockGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockGestureRecognizer.swift; path = PanelKit/Model/BlockGestureRecognizer.swift; sourceTree = "<group>"; };
 		5A04643FF28D98357EB2BAAA7BF702E8 /* Pods-OmegaDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OmegaDemo-umbrella.h"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		748157A6A042689A85D157B1BB28AA34 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
-		78EF432E1A66215BE85B1D9BB227E12A /* BlockBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockBarButtonItem.swift; path = PanelKit/Utils/BlockBarButtonItem.swift; sourceTree = "<group>"; };
-		79B7A5F6B103027D5E1DB151FE895050 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
-		7B8E5FAC58A4CF74E5E1C4677B89FEBC /* PanelManager+Offscreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Offscreen.swift"; path = "PanelKit/PanelManager/PanelManager+Offscreen.swift"; sourceTree = "<group>"; };
-		818D38CDBEC62CFAB80F74EDF30FB2EE /* PanelManager+Expose.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Expose.swift"; path = "PanelKit/PanelManager/PanelManager+Expose.swift"; sourceTree = "<group>"; };
-		88EE0C8E4B623E48B8CB0348B479DD57 /* PanelManager+Floating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Floating.swift"; path = "PanelKit/PanelManager/PanelManager+Floating.swift"; sourceTree = "<group>"; };
-		8CA42600EEE1EE3108E712007197CEC7 /* PanelKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PanelKit.xcconfig; sourceTree = "<group>"; };
-		8DD43B0C8ABFBD13B9758DFAA45BDB5A /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		616B4CDE755B5761E2DF002D322A5E6C /* PanelManager+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+AutoLayout.swift"; path = "PanelKit/PanelManager/PanelManager+AutoLayout.swift"; sourceTree = "<group>"; };
+		6CB2F4E3DAEBA4927E136DF289FA1642 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		6E6C1A88C281F672CD2139735044A6D2 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
+		7C853EC466E096DFBA453F2E1D4B1E99 /* PanelManager+Floating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Floating.swift"; path = "PanelKit/PanelManager/PanelManager+Floating.swift"; sourceTree = "<group>"; };
+		80E6093C3643461B9A0C3E99DC9D16A9 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		80F2882B0C01B3F59DA96848E4A86B20 /* BlockBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockBarButtonItem.swift; path = PanelKit/Utils/BlockBarButtonItem.swift; sourceTree = "<group>"; };
+		823AA5DE1B90CE88A8E8DF25EF9DD8D8 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		82E506C8FD07BB1A1C2C820BC7776DD4 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		83BE0EC919256F757188D2680A08FE26 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		85F93A349A7C4890C58762EBBD5FCE5C /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		86C7D91BDFACC0D927A991B38253A912 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		888703B9EE4798DF7D088405C9446E42 /* PanelViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanelViewController.swift; path = PanelKit/Controller/PanelViewController.swift; sourceTree = "<group>"; };
 		8E6417C2987EFE22AB8179CC2CA80908 /* Pods-OmegaDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OmegaDemo.modulemap"; sourceTree = "<group>"; };
+		8EB87977E39F670A08E1B4971E24A118 /* PanelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PanelKit.framework; path = PanelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		910E8F0F92C3D77C209398D74F66B907 /* PanelKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PanelKit.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93B303EC21B9584497FE2FE67A84C2BB /* PanelContentDelegate+Default.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelContentDelegate+Default.swift"; path = "PanelKit/PanelContentDelegate/PanelContentDelegate+Default.swift"; sourceTree = "<group>"; };
-		94532A6536FFBC8DE1149C05423CA8A5 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
-		947717DDE35840F4B69305B13C4EAE2E /* PanelKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PanelKit-umbrella.h"; sourceTree = "<group>"; };
-		982D538241D463F44BF220F00F6FCF0D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99BA2259579F7D95C93EB2C4B2712934 /* CGRect+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+Center.swift"; path = "PanelKit/Utils/CGRect+Center.swift"; sourceTree = "<group>"; };
-		9A1BF6CFAA83C449794D7DD94786A060 /* PanelManager+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+AutoLayout.swift"; path = "PanelKit/PanelManager/PanelManager+AutoLayout.swift"; sourceTree = "<group>"; };
-		9FC6BAACC9A0620D2526A896485AB4BD /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
-		A1B957216F97CA66D1724BE7318880DB /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
-		A34779FE7F23AD828ABDA216324D0BF6 /* Pods_OmegaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OmegaDemo.framework; path = "Pods-OmegaDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7D7A685CAA3603BE8A1C6EF405088AE /* PanelManager+Pinning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Pinning.swift"; path = "PanelKit/PanelManager/PanelManager+Pinning.swift"; sourceTree = "<group>"; };
-		A999D78FF884BFE76CF65B99CF0FA8E1 /* PanelViewController+Offscreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelViewController+Offscreen.swift"; path = "PanelKit/Controller/PanelViewController+Offscreen.swift"; sourceTree = "<group>"; };
-		AA6ED068F9E2C3831CB1F0A677CCB7B2 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
-		AD5A31068B932A055E7B8BEEE90AF741 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD6982439C79BEAD0FF1C9DE3371945E /* PanelViewController+Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelViewController+Keyboard.swift"; path = "PanelKit/Controller/PanelViewController+Keyboard.swift"; sourceTree = "<group>"; };
-		B1B56C378CC8F2CDCFAC9F85DE5F2FE2 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
-		B29B920EFE332C0C052482B9702BA60F /* LogLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogLevel.swift; path = PanelKit/Model/LogLevel.swift; sourceTree = "<group>"; };
-		B386986176848CA3754EC1DBA0810BDE /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
-		B673AF8427287C2793793B15696FB6F6 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
-		C0FAB29EEBB6ECAC50786BB862F228CA /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		9975315B85ABBD711A1CB10150BCA118 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		9F6CFEEAC16E5EDC8BF26872C47B2798 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		9FD13ECB311F9799300DFB4F8EA1952F /* PanelViewController+Dragging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelViewController+Dragging.swift"; path = "PanelKit/Controller/PanelViewController+Dragging.swift"; sourceTree = "<group>"; };
+		A00D52A9835E941003FA1BD2E6AF1CA4 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
+		A8AA237C19815A80299FDA034B274DAB /* PanelContentDelegate+Default.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelContentDelegate+Default.swift"; path = "PanelKit/PanelContentDelegate/PanelContentDelegate+Default.swift"; sourceTree = "<group>"; };
+		AA4FED878B1D9F21F6144ED37CE97169 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		ADB1578224032C82D4634FC56CFBA38B /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4D1897B9A49267CEF42BBBD27C908A /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		BC2661896AEE5A642E793912A84DCA05 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		BD1FE8654AC3E959244B174C3D3FE437 /* CGRect+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+Center.swift"; path = "PanelKit/Utils/CGRect+Center.swift"; sourceTree = "<group>"; };
+		BDCD3901CB625104D7B293E446ADDF61 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		BE1F51BCE1E5162EB5F10B254B4EFE03 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		C033BAF2F803B77FC4F7964E1BDB5446 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		C0374E5694990AB63672AA1892C83612 /* PanelManager+Closing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Closing.swift"; path = "PanelKit/PanelManager/PanelManager+Closing.swift"; sourceTree = "<group>"; };
+		C0549BB7978BE4AADCAC3D99B1DCC7CC /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
 		C3295F4F85FD059B474CD7599BEEDE3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C97A9A50BF4E37D48F7158802B632282 /* PanelKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PanelKit.modulemap; sourceTree = "<group>"; };
-		D13C45947D40C90DF8720F061B96DA7B /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
-		D579C9B377117B46B23D58F10A6F19C3 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBEBEC6E30F0979DBF44BEB70CE2B41C /* PanelManager+Default.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Default.swift"; path = "PanelKit/PanelManager/PanelManager+Default.swift"; sourceTree = "<group>"; };
+		C3505520EDB1606EC97AFE6347DDB62B /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		C7171442975F72D586486440BC886FE6 /* PanelKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PanelKit-prefix.pch"; sourceTree = "<group>"; };
+		C9C693B3A2FC047BB4D202A976C2C66F /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		CE0F9A7DA7D469ED5D13E0745B39B3AD /* PanelManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanelManager.swift; path = PanelKit/PanelManager/PanelManager.swift; sourceTree = "<group>"; };
+		D3AA570EB0BECC42851A63CE05111003 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		D5FD973A2D981D246F4875DAE75B8622 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		D6A84DB067C6D9D2D0000285BBFB00F6 /* AssociatedObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociatedObject.swift; path = PanelKit/Model/AssociatedObject.swift; sourceTree = "<group>"; };
+		D720E11B046AF3BA162E396F77C7DE50 /* PanelManager+Expose.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Expose.swift"; path = "PanelKit/PanelManager/PanelManager+Expose.swift"; sourceTree = "<group>"; };
+		D9A01A44F4FC2B58F84DD95631332245 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		DDCFF218F40EBC4BD1408CC2BA36C626 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
 		DE4FBFF41E7C36F79CC3A3EED854310E /* Pods-OmegaDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OmegaDemo-resources.sh"; sourceTree = "<group>"; };
-		E656CD659E98FF4B33213686597E5188 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
-		E71EED2393B10DE6B6DE6E12E1FEDB33 /* PanelContentDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanelContentDelegate.swift; path = PanelKit/PanelContentDelegate/PanelContentDelegate.swift; sourceTree = "<group>"; };
+		DEA25F6CE5E20BC5E54CC40B4BE3388C /* UIViewController+Popover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Popover.swift"; path = "PanelKit/Utils/UIViewController+Popover.swift"; sourceTree = "<group>"; };
+		E7850C5E217CD4A93559714E52D73DA6 /* PanelKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PanelKit-dummy.m"; sourceTree = "<group>"; };
 		E7D3B75B8F039EDB136B574340A45575 /* Pods-OmegaDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OmegaDemo-dummy.m"; sourceTree = "<group>"; };
+		E89F97F7E5DD1FE6C9FCCDCF5E992A07 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		EB3FBC39BA6730813ECDE196BB2C6C01 /* Pods-OmegaDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OmegaDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		EBFFF20B88FE41B6F0CA417B36C655D9 /* Pods-OmegaDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OmegaDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EDB1F0F7017C1643333509A0A65BBB60 /* Pods-OmegaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OmegaDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		EEB2372D8E7CC83A0BC0C9258E750CBB /* UIViewController+Popover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Popover.swift"; path = "PanelKit/Utils/UIViewController+Popover.swift"; sourceTree = "<group>"; };
-		EFA89762D10D678536875768BEFE099D /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		F21973358B9549FDEC47E1BFFC6AF387 /* BlockGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockGestureRecognizer.swift; path = PanelKit/Model/BlockGestureRecognizer.swift; sourceTree = "<group>"; };
-		F62583247A54572856DF25D58E722040 /* PanelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PanelKit.framework; path = PanelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F91C16EA8FAB491D62628F1AD8484588 /* PanelViewController+States.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelViewController+States.swift"; path = "PanelKit/Controller/PanelViewController+States.swift"; sourceTree = "<group>"; };
+		EDB64D0539E9DD0E261E50719198357D /* PanelContentDelegate+Navigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelContentDelegate+Navigation.swift"; path = "PanelKit/PanelContentDelegate/PanelContentDelegate+Navigation.swift"; sourceTree = "<group>"; };
+		EF71144CF7D9BC39E5CE2916CDD6659D /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		F251307395CFAB48CD49877D80D30C7B /* PanelPinSide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanelPinSide.swift; path = PanelKit/Model/PanelPinSide.swift; sourceTree = "<group>"; };
+		F641F964A5749676BB0CBD9650C47331 /* PanelManager+Dragging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelManager+Dragging.swift"; path = "PanelKit/PanelManager/PanelManager+Dragging.swift"; sourceTree = "<group>"; };
 		F9A562546AFB00E02397EE0468DFB60A /* Pods-OmegaDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OmegaDemo-frameworks.sh"; sourceTree = "<group>"; };
-		FBC643BEA60BA05E9989CC7249A5D6D0 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		FA121A60E632F0E4A68EC6135FA6C53A /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		FBE46502681CA0961534BD8D571BD352 /* PanelViewController+Offscreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PanelViewController+Offscreen.swift"; path = "PanelKit/Controller/PanelViewController+Offscreen.swift"; sourceTree = "<group>"; };
+		FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D82E0AAB87289D281630D6A7DA80E24 /* Frameworks */ = {
+		25E9DA9807943B90D9D284F9BFC41893 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8846C9AF6082A07E897B20A6383E2399 /* Foundation.framework in Frameworks */,
+				FE1B891939D18A18BB29D537BE22AD5D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5147C50ED57D26BEC4A1AF7C951525AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F24A847E831FA4156924A972D959B54 /* Foundation.framework in Frameworks */,
+				C664EB83FF5ACE7298CAB46BD8EC2143 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,44 +226,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1B8774E024F7F56B36EE1C889B5C31E /* Frameworks */ = {
+		CF1E7BD8C7608EE51232F675713A8D17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EA0DC6D4C1CB04C0CF850ADFDFB9371 /* Foundation.framework in Frameworks */,
+				CEC9235900823AD87B39B090C613E893 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16845182A08A3145DEB712C515BA5905 /* standard */ = {
+		2599B237B786CA8167BE7083900F0FD4 /* PanelKit */ = {
 			isa = PBXGroup;
 			children = (
-				32BBA2C40C748964DC9AEFB46DBF8DAE /* AggregateFunctions.swift */,
-				0E9C78A7C579AC30003FC7E1235C975A /* Blob.swift */,
-				79B7A5F6B103027D5E1DB151FE895050 /* Collation.swift */,
-				94532A6536FFBC8DE1149C05423CA8A5 /* Connection.swift */,
-				43E914CB9BBFC0B9EA5B55D6AF6D814A /* CoreFunctions.swift */,
-				447F613CEA0295CD0200406E6F7B4BC1 /* CustomFunctions.swift */,
-				1A01B0E9BFD65634A3C9AC603C0F40F5 /* Expression.swift */,
-				20EF7755E84685741FD2F137CC02E356 /* Foundation.swift */,
-				0C756607860A5E66CFCA408F5D84FF3A /* fts3_tokenizer.h */,
-				015EEDA2EA00969AB729ADD3D3AC9093 /* FTS4.swift */,
-				187AA6F00D8064D1773D220BE29D399C /* FTS5.swift */,
-				748157A6A042689A85D157B1BB28AA34 /* Helpers.swift */,
-				8DD43B0C8ABFBD13B9758DFAA45BDB5A /* Operators.swift */,
-				B386986176848CA3754EC1DBA0810BDE /* Query.swift */,
-				FBC643BEA60BA05E9989CC7249A5D6D0 /* RTree.swift */,
-				9FC6BAACC9A0620D2526A896485AB4BD /* Schema.swift */,
-				C0FAB29EEBB6ECAC50786BB862F228CA /* Setter.swift */,
-				AA6ED068F9E2C3831CB1F0A677CCB7B2 /* SQLite.h */,
-				B673AF8427287C2793793B15696FB6F6 /* SQLite-Bridging.h */,
-				D13C45947D40C90DF8720F061B96DA7B /* SQLite-Bridging.m */,
-				EFA89762D10D678536875768BEFE099D /* Statement.swift */,
-				A1B957216F97CA66D1724BE7318880DB /* Value.swift */,
+				D6A84DB067C6D9D2D0000285BBFB00F6 /* AssociatedObject.swift */,
+				80F2882B0C01B3F59DA96848E4A86B20 /* BlockBarButtonItem.swift */,
+				57582200AAD8A5B7BE1B6EECA58BE233 /* BlockGestureRecognizer.swift */,
+				BD1FE8654AC3E959244B174C3D3FE437 /* CGRect+Center.swift */,
+				32E229C2F78ABFDD2C8D340CD1892835 /* Constants.swift */,
+				0A9D41CF73D43583EE000AF798318707 /* LogLevel.swift */,
+				2FAB496D2F24C3896897128A46FD7E6A /* PanelContentDelegate.swift */,
+				A8AA237C19815A80299FDA034B274DAB /* PanelContentDelegate+Default.swift */,
+				EDB64D0539E9DD0E261E50719198357D /* PanelContentDelegate+Navigation.swift */,
+				CE0F9A7DA7D469ED5D13E0745B39B3AD /* PanelManager.swift */,
+				616B4CDE755B5761E2DF002D322A5E6C /* PanelManager+AutoLayout.swift */,
+				C0374E5694990AB63672AA1892C83612 /* PanelManager+Closing.swift */,
+				48395727448530496F24BF6D8F7CEF22 /* PanelManager+Default.swift */,
+				F641F964A5749676BB0CBD9650C47331 /* PanelManager+Dragging.swift */,
+				D720E11B046AF3BA162E396F77C7DE50 /* PanelManager+Expose.swift */,
+				7C853EC466E096DFBA453F2E1D4B1E99 /* PanelManager+Floating.swift */,
+				569489F21089DA3D169B49213DD5F035 /* PanelManager+Offscreen.swift */,
+				54F9948D35A9C1F509D35E931641496F /* PanelManager+Pinning.swift */,
+				3F91A7600967EE0A63021D971004BA7E /* PanelNavigationController.swift */,
+				F251307395CFAB48CD49877D80D30C7B /* PanelPinSide.swift */,
+				888703B9EE4798DF7D088405C9446E42 /* PanelViewController.swift */,
+				140DC312A4B4646347CBB17C8A3DA0CB /* PanelViewController+Appearance.swift */,
+				9FD13ECB311F9799300DFB4F8EA1952F /* PanelViewController+Dragging.swift */,
+				5104BE4E2D8468627911A7CCDD0F1BED /* PanelViewController+Keyboard.swift */,
+				FBE46502681CA0961534BD8D571BD352 /* PanelViewController+Offscreen.swift */,
+				02B476D911638BF3EE424BD49C531188 /* PanelViewController+States.swift */,
+				DEA25F6CE5E20BC5E54CC40B4BE3388C /* UIViewController+Popover.swift */,
+				E5CF7C06A015677C4BD8D34FD4ACFE1C /* Support Files */,
 			);
-			name = standard;
+			name = PanelKit;
+			path = PanelKit;
 			sourceTree = "<group>";
 		};
 		336C7C8BDBB57AC55FA7B1842771A727 /* Pods-OmegaDemo */ = {
@@ -238,28 +291,55 @@
 			path = "Target Support Files/Pods-OmegaDemo";
 			sourceTree = "<group>";
 		};
-		47082DB9905C29FADF960FB714371168 /* Support Files */ = {
+		35A72AD6CE690FCB325CD846AE867E12 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				AD5A31068B932A055E7B8BEEE90AF741 /* Info.plist */,
-				100C3126417329FA4BC810147038A5DC /* SQLite.swift.modulemap */,
-				2AD994FDE9EB2534C1918B364444A12B /* SQLite.swift.xcconfig */,
-				B1B56C378CC8F2CDCFAC9F85DE5F2FE2 /* SQLite.swift-dummy.m */,
-				4C4298FBC8BA564225863BD58269C2AE /* SQLite.swift-prefix.pch */,
-				E656CD659E98FF4B33213686597E5188 /* SQLite.swift-umbrella.h */,
+				D5FD973A2D981D246F4875DAE75B8622 /* SVIndefiniteAnimatedView.h */,
+				823AA5DE1B90CE88A8E8DF25EF9DD8D8 /* SVIndefiniteAnimatedView.m */,
+				DDCFF218F40EBC4BD1408CC2BA36C626 /* SVProgressAnimatedView.h */,
+				40C046333CA35BCE997E5261E840CEB9 /* SVProgressAnimatedView.m */,
+				E89F97F7E5DD1FE6C9FCCDCF5E992A07 /* SVProgressHUD.h */,
+				4DD5EA08DB2A592BC3269FB9B062505A /* SVProgressHUD.m */,
+				1129ED18BC63593F1F99D886DD7F08C0 /* SVRadialGradientLayer.h */,
+				FA121A60E632F0E4A68EC6135FA6C53A /* SVRadialGradientLayer.m */,
+				AE0255A621991202CA6524B92EAAD188 /* Resources */,
+				3CA000E3C1C959669343ABE885F13C72 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SQLite.swift";
+			name = SVProgressHUD;
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		5A76F4307A8BE42DC127033909BDCBFD /* SQLite.swift */ = {
+		3CA000E3C1C959669343ABE885F13C72 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				16845182A08A3145DEB712C515BA5905 /* standard */,
-				47082DB9905C29FADF960FB714371168 /* Support Files */,
+				44562395391C074780933D65A7FEA624 /* Info.plist */,
+				85F93A349A7C4890C58762EBBD5FCE5C /* SVProgressHUD.modulemap */,
+				4D1AE4CDD4FA7E5BD6442CF350786039 /* SVProgressHUD.xcconfig */,
+				80E6093C3643461B9A0C3E99DC9D16A9 /* SVProgressHUD-dummy.m */,
+				3189A9DBB180F64CC9C9ED734DDF8DEE /* SVProgressHUD-prefix.pch */,
+				C033BAF2F803B77FC4F7964E1BDB5446 /* SVProgressHUD-umbrella.h */,
 			);
-			name = SQLite.swift;
-			path = SQLite.swift;
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				978007DCB56F415BE390E0F949D4D4E5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		436BFE6F4C2831DB77A74A777D855685 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EB87977E39F670A08E1B4971E24A118 /* PanelKit.framework */,
+				0D33BBC977207540CBAC5AF16C2BF18A /* Pods_OmegaDemo.framework */,
+				ADB1578224032C82D4634FC56CFBA38B /* SQLite.framework */,
+				49A7489C59F41CB503B5611506681818 /* SVProgressHUD.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		65A802F066B7269C2498534989F93427 /* Targets Support Files */ = {
@@ -270,121 +350,142 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		74CC0F97D0CFB3A5AF86B521014D98AF /* PanelKit */ = {
-			isa = PBXGroup;
-			children = (
-				54983D271EAFB2EEFC9C3374833507A4 /* AssociatedObject.swift */,
-				78EF432E1A66215BE85B1D9BB227E12A /* BlockBarButtonItem.swift */,
-				F21973358B9549FDEC47E1BFFC6AF387 /* BlockGestureRecognizer.swift */,
-				99BA2259579F7D95C93EB2C4B2712934 /* CGRect+Center.swift */,
-				0B81F10576C3759FECBFA10447509B47 /* Constants.swift */,
-				B29B920EFE332C0C052482B9702BA60F /* LogLevel.swift */,
-				E71EED2393B10DE6B6DE6E12E1FEDB33 /* PanelContentDelegate.swift */,
-				93B303EC21B9584497FE2FE67A84C2BB /* PanelContentDelegate+Default.swift */,
-				225EE5200317BD2826526C65445DBDDE /* PanelContentDelegate+Navigation.swift */,
-				00F0ED75B8B268F9D153A15E80EFFE3B /* PanelManager.swift */,
-				9A1BF6CFAA83C449794D7DD94786A060 /* PanelManager+AutoLayout.swift */,
-				0CFF6B01272401407EA68EF9A8572AD9 /* PanelManager+Closing.swift */,
-				DBEBEC6E30F0979DBF44BEB70CE2B41C /* PanelManager+Default.swift */,
-				4361CD785C7B79FFE7897A3A029FA79D /* PanelManager+Dragging.swift */,
-				818D38CDBEC62CFAB80F74EDF30FB2EE /* PanelManager+Expose.swift */,
-				88EE0C8E4B623E48B8CB0348B479DD57 /* PanelManager+Floating.swift */,
-				7B8E5FAC58A4CF74E5E1C4677B89FEBC /* PanelManager+Offscreen.swift */,
-				A7D7A685CAA3603BE8A1C6EF405088AE /* PanelManager+Pinning.swift */,
-				0E091A1DA399484107922865E1D9D393 /* PanelNavigationController.swift */,
-				466298DE8C4BCE3195B5C035BC15474B /* PanelPinSide.swift */,
-				48362EA7CF5878A7FD2483C4D3F43CF8 /* PanelViewController.swift */,
-				3FE17BEAE5F0E2B32C393EBCFAFA8384 /* PanelViewController+Appearance.swift */,
-				1C0424F7E6302A5A60EC66D281487300 /* PanelViewController+Dragging.swift */,
-				AD6982439C79BEAD0FF1C9DE3371945E /* PanelViewController+Keyboard.swift */,
-				A999D78FF884BFE76CF65B99CF0FA8E1 /* PanelViewController+Offscreen.swift */,
-				F91C16EA8FAB491D62628F1AD8484588 /* PanelViewController+States.swift */,
-				EEB2372D8E7CC83A0BC0C9258E750CBB /* UIViewController+Popover.swift */,
-				A25B03D78C782F8A924EC1C5008E9C1E /* Support Files */,
-			);
-			name = PanelKit;
-			path = PanelKit;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B7EA8B04022A2786211A8F772EFC37DC /* Pods */,
-				D8809E525807EC188B23E5AA78533262 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				CDBEAA5B0648C073AD255874FCBB78B3 /* Pods */,
+				436BFE6F4C2831DB77A74A777D855685 /* Products */,
 				65A802F066B7269C2498534989F93427 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A25B03D78C782F8A924EC1C5008E9C1E /* Support Files */ = {
+		8415DF2A218412B1302777AB7D46D094 /* standard */ = {
 			isa = PBXGroup;
 			children = (
-				982D538241D463F44BF220F00F6FCF0D /* Info.plist */,
-				C97A9A50BF4E37D48F7158802B632282 /* PanelKit.modulemap */,
-				8CA42600EEE1EE3108E712007197CEC7 /* PanelKit.xcconfig */,
-				2768ED6ACF017C9468792572B45F6A01 /* PanelKit-dummy.m */,
-				0C589BB73211B7C9D4E2C4958EA64EF5 /* PanelKit-prefix.pch */,
-				947717DDE35840F4B69305B13C4EAE2E /* PanelKit-umbrella.h */,
+				EF71144CF7D9BC39E5CE2916CDD6659D /* AggregateFunctions.swift */,
+				82E506C8FD07BB1A1C2C820BC7776DD4 /* Blob.swift */,
+				BE1F51BCE1E5162EB5F10B254B4EFE03 /* Collation.swift */,
+				A00D52A9835E941003FA1BD2E6AF1CA4 /* Connection.swift */,
+				D3AA570EB0BECC42851A63CE05111003 /* CoreFunctions.swift */,
+				536F7856796D364D1488FA3DD99BA251 /* CustomFunctions.swift */,
+				376B6A8D414725A813CF6961D91F936D /* Expression.swift */,
+				6E6C1A88C281F672CD2139735044A6D2 /* Foundation.swift */,
+				BDCD3901CB625104D7B293E446ADDF61 /* fts3_tokenizer.h */,
+				9F6CFEEAC16E5EDC8BF26872C47B2798 /* FTS4.swift */,
+				6CB2F4E3DAEBA4927E136DF289FA1642 /* FTS5.swift */,
+				86C7D91BDFACC0D927A991B38253A912 /* Helpers.swift */,
+				C0549BB7978BE4AADCAC3D99B1DCC7CC /* Operators.swift */,
+				D9A01A44F4FC2B58F84DD95631332245 /* Query.swift */,
+				BC2661896AEE5A642E793912A84DCA05 /* RTree.swift */,
+				3826CD9674FD333FCAD1AC6DE9D51EC3 /* Schema.swift */,
+				C3505520EDB1606EC97AFE6347DDB62B /* Setter.swift */,
+				2E47570F061B3BC70140CAE67941BB32 /* SQLite.h */,
+				4F195DB6C0433CBECF47EE20661B2E9F /* SQLite-Bridging.h */,
+				9975315B85ABBD711A1CB10150BCA118 /* SQLite-Bridging.m */,
+				C9C693B3A2FC047BB4D202A976C2C66F /* Statement.swift */,
+				83BE0EC919256F757188D2680A08FE26 /* Value.swift */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		978007DCB56F415BE390E0F949D4D4E5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */,
+				FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AE0255A621991202CA6524B92EAAD188 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA4FED878B1D9F21F6144ED37CE97169 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CDBEAA5B0648C073AD255874FCBB78B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2599B237B786CA8167BE7083900F0FD4 /* PanelKit */,
+				E61BDCEA99D11851FE3B07F216B57B24 /* SQLite.swift */,
+				35A72AD6CE690FCB325CD846AE867E12 /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5CF7C06A015677C4BD8D34FD4ACFE1C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				15230E1212552F7850C37B2E4919F23C /* Info.plist */,
+				3E3ED3BB9281D7F9C471B165852159DB /* PanelKit.modulemap */,
+				910E8F0F92C3D77C209398D74F66B907 /* PanelKit.xcconfig */,
+				E7850C5E217CD4A93559714E52D73DA6 /* PanelKit-dummy.m */,
+				C7171442975F72D586486440BC886FE6 /* PanelKit-prefix.pch */,
+				3109CE5D5C3C99C70EA538891FF118E5 /* PanelKit-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PanelKit";
 			sourceTree = "<group>";
 		};
-		B7EA8B04022A2786211A8F772EFC37DC /* Pods */ = {
+		E61BDCEA99D11851FE3B07F216B57B24 /* SQLite.swift */ = {
 			isa = PBXGroup;
 			children = (
-				74CC0F97D0CFB3A5AF86B521014D98AF /* PanelKit */,
-				5A76F4307A8BE42DC127033909BDCBFD /* SQLite.swift */,
+				8415DF2A218412B1302777AB7D46D094 /* standard */,
+				F03937A2B740F076121F03CC44BC9039 /* Support Files */,
 			);
-			name = Pods;
+			name = SQLite.swift;
+			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		F03937A2B740F076121F03CC44BC9039 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				44277C25D4FD45F5E11F81D8DE970137 /* Info.plist */,
+				45667A7EB033A0DD63B4BCBF0086ECA1 /* SQLite.swift.modulemap */,
+				500F75CE072AE35977A697376075DED4 /* SQLite.swift.xcconfig */,
+				342BD87C1B4A2CD6E9DDF84FAC569705 /* SQLite.swift-dummy.m */,
+				30A6FACA522E31E8B9A9E4B78EB591E7 /* SQLite.swift-prefix.pch */,
+				BB4D1897B9A49267CEF42BBBD27C908A /* SQLite.swift-umbrella.h */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D8809E525807EC188B23E5AA78533262 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F62583247A54572856DF25D58E722040 /* PanelKit.framework */,
-				A34779FE7F23AD828ABDA216324D0BF6 /* Pods_OmegaDemo.framework */,
-				D579C9B377117B46B23D58F10A6F19C3 /* SQLite.framework */,
-			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		730E9EA48CDE4E5339EB39FBA0B1A840 /* Headers */ = {
+		4AC129A997871FE6DD863F37A2A3FC1D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CEC1542895C73D67134BDA6DC65DCA6 /* Pods-OmegaDemo-umbrella.h in Headers */,
+				9C10040876E811C985A8FCCA49096F12 /* Pods-OmegaDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E17EEDA3457618F08A1FD90E6E426913 /* Headers */ = {
+		A37AE4FA9435E6EAAC2F72323A3AF779 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEEC69B969C0FFB61F93BDBE070F8ACA /* fts3_tokenizer.h in Headers */,
-				3F8A1E7B77A2DD315E9614CBE0944A8D /* SQLite-Bridging.h in Headers */,
-				8EFDE0F7B740CDEC6AE04CC1F3ADD4DB /* SQLite.h in Headers */,
-				8897B631FE38108CC43B2BD9C0BCEB06 /* SQLite.swift-umbrella.h in Headers */,
+				9935D5F9B0BDC9FDA28D9764E087DBC0 /* fts3_tokenizer.h in Headers */,
+				F9F70430A87136B28979FB341CEE19C6 /* SQLite-Bridging.h in Headers */,
+				F4AE21A93DA5363A4513FC2467F7FA5C /* SQLite.h in Headers */,
+				4FD25CADB3B80965468742DD920BB59A /* SQLite.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4D2CF9A213EB5456816C0775549FE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435412FD9DE8E8398F2D0D3576192F93 /* SVIndefiniteAnimatedView.h in Headers */,
+				56448F1A6A31BD2E5A673737DA02F883 /* SVProgressAnimatedView.h in Headers */,
+				B4B7ABEC94622BE52113046E65B39B98 /* SVProgressHUD-umbrella.h in Headers */,
+				65EB8500D6C7D7EB0529A1ED4BA0C477 /* SVProgressHUD.h in Headers */,
+				371D8432AD522168B28CCC2E87846AA0 /* SVRadialGradientLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +500,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		7B55652C2D1ECF317CD2054CC489FCC7 /* Pods-OmegaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDADB37668AD2B7B123402D73F449BB5 /* Build configuration list for PBXNativeTarget "Pods-OmegaDemo" */;
+			buildPhases = (
+				4D18B9C183E1862F99A35E34050F4301 /* Sources */,
+				25E9DA9807943B90D9D284F9BFC41893 /* Frameworks */,
+				4AC129A997871FE6DD863F37A2A3FC1D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F473ADCE46567BD83D83290C040DD0C /* PBXTargetDependency */,
+				60499B2051989172A4EC8EAA29D7518A /* PBXTargetDependency */,
+				5CA55C0E697A179C03C9D54894BEDB31 /* PBXTargetDependency */,
+			);
+			name = "Pods-OmegaDemo";
+			productName = "Pods-OmegaDemo";
+			productReference = 0D33BBC977207540CBAC5AF16C2BF18A /* Pods_OmegaDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A470933FEEB96CE440E8C20EE5F4A25C /* SQLite.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CD3952D8655FA1D9CB6E0CA747927B7 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildPhases = (
+				7F0CDAFF3C797D8B36119EACB0760184 /* Sources */,
+				CF1E7BD8C7608EE51232F675713A8D17 /* Frameworks */,
+				A37AE4FA9435E6EAAC2F72323A3AF779 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLite.swift;
+			productName = SQLite.swift;
+			productReference = ADB1578224032C82D4634FC56CFBA38B /* SQLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		CDBAD062B9A5E96EB764CE55D11C7095 /* PanelKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C485ECC853D7B1E7B59DE8E6A3019F6F /* Build configuration list for PBXNativeTarget "PanelKit" */;
@@ -413,43 +551,25 @@
 			);
 			name = PanelKit;
 			productName = PanelKit;
-			productReference = F62583247A54572856DF25D58E722040 /* PanelKit.framework */;
+			productReference = 8EB87977E39F670A08E1B4971E24A118 /* PanelKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D50F4793B97A1CE0923F815C9C4F1B1C /* Pods-OmegaDemo */ = {
+		D6DB3E8BE3CD58E3C5C7F47BEA70A8A9 /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F9EF05B763C23C58C98BDD560249628 /* Build configuration list for PBXNativeTarget "Pods-OmegaDemo" */;
+			buildConfigurationList = 9DA9F6F5B9376B796827BE74116D1AFC /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
 			buildPhases = (
-				D03E08CAB5C95E7010CE98B796C4F820 /* Sources */,
-				D1B8774E024F7F56B36EE1C889B5C31E /* Frameworks */,
-				730E9EA48CDE4E5339EB39FBA0B1A840 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				45D4035273E518AC3AA03775E7D8482B /* PBXTargetDependency */,
-				690D2DF506A3363662950854D47DEE81 /* PBXTargetDependency */,
-			);
-			name = "Pods-OmegaDemo";
-			productName = "Pods-OmegaDemo";
-			productReference = A34779FE7F23AD828ABDA216324D0BF6 /* Pods_OmegaDemo.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FEE990F7309A8EC3659333517B4FA404 /* SQLite.swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3632A316358180B91DB5304DF9391495 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
-			buildPhases = (
-				C8D10EF020B0AC2ADD3AF8C91656D19A /* Sources */,
-				1D82E0AAB87289D281630D6A7DA80E24 /* Frameworks */,
-				E17EEDA3457618F08A1FD90E6E426913 /* Headers */,
+				6B9198C9AFAA806D282D8A3BEA9E589A /* Sources */,
+				5147C50ED57D26BEC4A1AF7C951525AB /* Frameworks */,
+				BB4D2CF9A213EB5456816C0775549FE7 /* Headers */,
+				AE65936F952504CC55846C1DAEC7968F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SQLite.swift;
-			productName = SQLite.swift;
-			productReference = D579C9B377117B46B23D58F10A6F19C3 /* SQLite.framework */;
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 49A7489C59F41CB503B5611506681818 /* SVProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -469,18 +589,38 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D8809E525807EC188B23E5AA78533262 /* Products */;
+			productRefGroup = 436BFE6F4C2831DB77A74A777D855685 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CDBAD062B9A5E96EB764CE55D11C7095 /* PanelKit */,
-				D50F4793B97A1CE0923F815C9C4F1B1C /* Pods-OmegaDemo */,
-				FEE990F7309A8EC3659333517B4FA404 /* SQLite.swift */,
+				7B55652C2D1ECF317CD2054CC489FCC7 /* Pods-OmegaDemo */,
+				A470933FEEB96CE440E8C20EE5F4A25C /* SQLite.swift */,
+				D6DB3E8BE3CD58E3C5C7F47BEA70A8A9 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		AE65936F952504CC55846C1DAEC7968F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009CB59E35E80CA673B76E087DA86737 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		4D18B9C183E1862F99A35E34050F4301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E992A7C6CCD673A43757CCE696D766 /* Pods-OmegaDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		623EB0FC4B99494BBABBBFF4919265E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -516,62 +656,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8D10EF020B0AC2ADD3AF8C91656D19A /* Sources */ = {
+		6B9198C9AFAA806D282D8A3BEA9E589A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FD2350956A72F18284602B1EDCF526A /* AggregateFunctions.swift in Sources */,
-				B937743BD74BB0D665D11942CA4C395E /* Blob.swift in Sources */,
-				23EA0876A3B0E0E8BC54528526DE14B2 /* Collation.swift in Sources */,
-				5794699C97240FC6A997AE603CD89838 /* Connection.swift in Sources */,
-				4D09FB9C8397CF8523CCF12CB00191F8 /* CoreFunctions.swift in Sources */,
-				AA80EA9698D0602AD2D9919F0D80FBFF /* CustomFunctions.swift in Sources */,
-				99090024372C53F00F7073F5AA63DC39 /* Expression.swift in Sources */,
-				1FE71067F53C5BBF951640F583D08910 /* Foundation.swift in Sources */,
-				ECF03B98840E1B4D74ABC9726FEFD2C5 /* FTS4.swift in Sources */,
-				3908D28688D54BAFF4CD5975290195CF /* FTS5.swift in Sources */,
-				048957297FFB32F1920A814DCB757074 /* Helpers.swift in Sources */,
-				7419E4244F79FF00925209404C87F8F1 /* Operators.swift in Sources */,
-				4ECB4474BCC2DCF2E0BEE70001593318 /* Query.swift in Sources */,
-				B050F84810EEF2D234255EDEFE8741B0 /* RTree.swift in Sources */,
-				1AB6D8A33EB49437B997BA12C6265187 /* Schema.swift in Sources */,
-				DD3B32698120306195FDED74283D09B0 /* Setter.swift in Sources */,
-				5176E2D7B991E1FE43654DD15183ACE9 /* SQLite-Bridging.m in Sources */,
-				F4E6575531368CF05BB76923926599FA /* SQLite.swift-dummy.m in Sources */,
-				738BFF065B63B65C12E478F7135519E6 /* Statement.swift in Sources */,
-				7427A7F8DC374DA89E3CA8593C53E768 /* Value.swift in Sources */,
+				1DEAEB2BCDBCBCD06D75B8B7CFAC91B0 /* SVIndefiniteAnimatedView.m in Sources */,
+				19777CA539764D0DB51F4FFE3C516034 /* SVProgressAnimatedView.m in Sources */,
+				FFC580F8C298DBEB3CCE1673CE6B93AA /* SVProgressHUD-dummy.m in Sources */,
+				8793907612B8787F1B71ACE6948A4F0D /* SVProgressHUD.m in Sources */,
+				238F78B9D0742DB0C36707F1FBCFD6A6 /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D03E08CAB5C95E7010CE98B796C4F820 /* Sources */ = {
+		7F0CDAFF3C797D8B36119EACB0760184 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				561F60FFD53EC11387CA91FE391024AE /* Pods-OmegaDemo-dummy.m in Sources */,
+				CA8B6D8DE5067A8EBA67DE4F929E8399 /* AggregateFunctions.swift in Sources */,
+				3EE0D9F4BC9C4E199DD8F3F0CD882381 /* Blob.swift in Sources */,
+				2F858DDECEC4D60493B49B03035F5A76 /* Collation.swift in Sources */,
+				F26BA1AA540D9DCE06553A3B4F0AAD4E /* Connection.swift in Sources */,
+				8828AE0FF1BD36F81A14D2B8D4D1230B /* CoreFunctions.swift in Sources */,
+				0549DECDC70C76B7A4BF854CA53D7CFF /* CustomFunctions.swift in Sources */,
+				13122C617B36042192F6DA1F19433012 /* Expression.swift in Sources */,
+				2EF7F818AEF8541D9FFCF4F6775FFF80 /* Foundation.swift in Sources */,
+				8CFF61D90BDE000240921135DA080A27 /* FTS4.swift in Sources */,
+				4A13033A3124AB3DDA8651E78B7E78CB /* FTS5.swift in Sources */,
+				28BF2B1EE0045A0536788317E95A421E /* Helpers.swift in Sources */,
+				AFFE1883F68890B70AC2AC77B771223D /* Operators.swift in Sources */,
+				24DAF9C8120897A4B388B274AF7853D9 /* Query.swift in Sources */,
+				E222FEB3B322D533250CE3B43D82F10E /* RTree.swift in Sources */,
+				25AAFC008C6F205229304639229B494B /* Schema.swift in Sources */,
+				A972E325A05C6FA47CA2F78D133EED99 /* Setter.swift in Sources */,
+				98DF5854F035C1CD9F803388D326E684 /* SQLite-Bridging.m in Sources */,
+				5A4C128E242D7F9BB8A146441721CCF7 /* SQLite.swift-dummy.m in Sources */,
+				E9FD2287C91377F661807B36AB35D98B /* Statement.swift in Sources */,
+				B4CCAABD1DB04FB752704A401E25F8D9 /* Value.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		45D4035273E518AC3AA03775E7D8482B /* PBXTargetDependency */ = {
+		4F473ADCE46567BD83D83290C040DD0C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PanelKit;
 			target = CDBAD062B9A5E96EB764CE55D11C7095 /* PanelKit */;
-			targetProxy = D2F753339569461780D7E27FCA2D994B /* PBXContainerItemProxy */;
+			targetProxy = 2F6E5B8C75696EBC6AA8D3C1358A362B /* PBXContainerItemProxy */;
 		};
-		690D2DF506A3363662950854D47DEE81 /* PBXTargetDependency */ = {
+		5CA55C0E697A179C03C9D54894BEDB31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = D6DB3E8BE3CD58E3C5C7F47BEA70A8A9 /* SVProgressHUD */;
+			targetProxy = C1BE74C4012D440FD3995343719EDBC1 /* PBXContainerItemProxy */;
+		};
+		60499B2051989172A4EC8EAA29D7518A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SQLite.swift;
-			target = FEE990F7309A8EC3659333517B4FA404 /* SQLite.swift */;
-			targetProxy = 6A7712674CC0E13BE30AC9D787E8E460 /* PBXContainerItemProxy */;
+			target = A470933FEEB96CE440E8C20EE5F4A25C /* SQLite.swift */;
+			targetProxy = F67C8AFC600ABA034FAAA046D82588C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		13B4648D7B7B998DFE3A01C4278E6D54 /* Debug */ = {
+		0D3D244ED40543FFFC54FBCC7FA3EC9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDB1F0F7017C1643333509A0A65BBB60 /* Pods-OmegaDemo.debug.xcconfig */;
+			baseConfigurationReference = 500F75CE072AE35977A697376075DED4 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -585,18 +735,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OmegaDemo/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OmegaDemo/Pods-OmegaDemo.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OmegaDemo;
+				PRODUCT_NAME = SQLite;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -608,9 +754,9 @@
 			};
 			name = Debug;
 		};
-		45B45A52E8FCA5D8FF9530BF1AD53CAB /* Release */ = {
+		2D937A0E205A5E6EE5E078D1E2A36083 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AD994FDE9EB2534C1918B364444A12B /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = 500F75CE072AE35977A697376075DED4 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -635,6 +781,39 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		481D1AC42D42699936DCAC072923E358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D1AE4CDD4FA7E5BD6442CF350786039 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -690,9 +869,86 @@
 			};
 			name = Debug;
 		};
+		4F8C0AE6FD8096574F4DA38FC34E536E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548FF0AE5ED8522AF071C75BC8A25D68 /* Pods-OmegaDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OmegaDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OmegaDemo/Pods-OmegaDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OmegaDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6EBCD5B9729BD8FDE59F5E7D101D4E35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB1F0F7017C1643333509A0A65BBB60 /* Pods-OmegaDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OmegaDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OmegaDemo/Pods-OmegaDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OmegaDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		86A2465DB6BF574382AD884E55D1F136 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CA42600EEE1EE3108E712007197CEC7 /* PanelKit.xcconfig */;
+			baseConfigurationReference = 910E8F0F92C3D77C209398D74F66B907 /* PanelKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -726,7 +982,7 @@
 		};
 		9D632A75A160EA197C803700ACE520C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CA42600EEE1EE3108E712007197CEC7 /* PanelKit.xcconfig */;
+			baseConfigurationReference = 910E8F0F92C3D77C209398D74F66B907 /* PanelKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -748,41 +1004,6 @@
 				MODULEMAP_FILE = "Target Support Files/PanelKit/PanelKit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = PanelKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A0738A139CFB77E0E96BBBA6356E4EA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AD994FDE9EB2534C1918B364444A12B /* SQLite.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SQLite;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -838,43 +1059,38 @@
 			};
 			name = Release;
 		};
-		EA6C6CB5C0F22A30C985B8BDC647C6C9 /* Release */ = {
+		D84F287A63CBEF94F91CA906A96D63C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 548FF0AE5ED8522AF071C75BC8A25D68 /* Pods-OmegaDemo.release.xcconfig */;
+			baseConfigurationReference = 4D1AE4CDD4FA7E5BD6442CF350786039 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OmegaDemo/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OmegaDemo/Pods-OmegaDemo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OmegaDemo;
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SVProgressHUD;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -888,20 +1104,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3632A316358180B91DB5304DF9391495 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+		6CD3952D8655FA1D9CB6E0CA747927B7 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0738A139CFB77E0E96BBBA6356E4EA0 /* Debug */,
-				45B45A52E8FCA5D8FF9530BF1AD53CAB /* Release */,
+				0D3D244ED40543FFFC54FBCC7FA3EC9A /* Debug */,
+				2D937A0E205A5E6EE5E078D1E2A36083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F9EF05B763C23C58C98BDD560249628 /* Build configuration list for PBXNativeTarget "Pods-OmegaDemo" */ = {
+		9DA9F6F5B9376B796827BE74116D1AFC /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				13B4648D7B7B998DFE3A01C4278E6D54 /* Debug */,
-				EA6C6CB5C0F22A30C985B8BDC647C6C9 /* Release */,
+				D84F287A63CBEF94F91CA906A96D63C2 /* Debug */,
+				481D1AC42D42699936DCAC072923E358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -911,6 +1127,15 @@
 			buildConfigurations = (
 				9D632A75A160EA197C803700ACE520C9 /* Debug */,
 				86A2465DB6BF574382AD884E55D1F136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDADB37668AD2B7B123402D73F449BB5 /* Build configuration list for PBXNativeTarget "Pods-OmegaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EBCD5B9729BD8FDE59F5E7D101D4E35 /* Debug */,
+				4F8C0AE6FD8096574F4DA38FC34E536E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

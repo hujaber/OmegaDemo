@@ -22,28 +22,19 @@ class Utilities {
         let fileManager = FileManager.default
         if !fileManager.fileExists(atPath: dbPath!) {
             let documentsURL = Bundle.main.resourceURL
-            let fromPath = documentsURL?.appendingPathComponent(fileName)
+            let originURL = documentsURL?.appendingPathComponent(fileName)
             var error: NSError?
             do {
-                try fileManager.copyItem(atPath: (fromPath?.path)!, toPath: dbPath!)
+                try fileManager.copyItem(atPath: (originURL?.path)!, toPath: dbPath!)
             } catch let error1 as NSError {
                 error = error1
                 print("couldnt copy to destination. error: \(error?.description ?? "")")
             }
-
-            let alertController = UIAlertController.init()
-            if error != nil {
-                alertController.title = "Failed"
-                alertController.message = "Copying the database failed. \(error?.localizedDescription ?? "error")"
-            } else {
-                alertController.title = "Success"
-                alertController.message = "Successfully copied DB"
-            }
-
+            let errorMsg = "Copying file " + fileName + " failed. \(error?.localizedDescription ?? "error")"
+            let successMsg = "Successfully copied file " + fileName
+            let alertController = UIAlertController.init(title: ((error == nil) ? "Success": "Failed"), message: (error == nil) ? successMsg: errorMsg, preferredStyle: .alert)
             alertController.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
-            let appdelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
-
-            appdelegate.window?.rootViewController?.presentedViewController?.present(alertController, animated: true, completion: nil)
+            alertController.show(animated: true, vibrate: false, completion: nil)
         }
     }
 }

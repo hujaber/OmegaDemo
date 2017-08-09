@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class BaseViewController: UIViewController {
 
@@ -17,5 +18,21 @@ class BaseViewController: UIViewController {
     func showAlert(title: String, message: String) {
         let alertController = UIAlertController.init(title: title, message: message, defaultActionButtonTitle: "OK", tintColor: nil)
         present(alertController, animated: true, completion: nil)
+    }
+
+    func showLoader() {
+        UIApplication.shared.beginIgnoringInteractionEvents()
+        SVProgressHUD.setDefaultMaskType(.custom)
+        SVProgressHUD.setDefaultStyle(.custom)
+        SVProgressHUD.setBackgroundColor(UIColor.white)
+        SVProgressHUD.setForegroundColor(UIColor.oliveColor)
+        SVProgressHUD.show()
+    }
+
+    func  hideLoader() {
+        if SVProgressHUD.isVisible() {
+            UIApplication.shared.endIgnoringInteractionEvents()
+            SVProgressHUD.dismiss()
+        }
     }
 }

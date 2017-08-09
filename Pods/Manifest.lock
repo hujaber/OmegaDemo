@@ -3,15 +3,18 @@ PODS:
   - SQLite.swift (0.11.3):
     - SQLite.swift/standard (= 0.11.3)
   - SQLite.swift/standard (0.11.3)
+  - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
   - PanelKit (~> 1.0)
   - SQLite.swift (~> 0.11.3)
+  - SVProgressHUD
 
 SPEC CHECKSUMS:
   PanelKit: 92b092db31574fed837025dcf96375c1a4afb303
   SQLite.swift: 99b36c22084427f0abbeb957556ce1528cf10bb3
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 4157744af7cb8a30a644671127f81c769871f1a6
+PODFILE CHECKSUM: 632dc7c8c4853b7a6698d7c5fd09d08a2ee95141
 
 COCOAPODS: 1.2.1

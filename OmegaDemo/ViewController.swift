@@ -82,6 +82,7 @@ class ViewController: BaseViewController {
         let label = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: 25, height: 25))
         label.text = text
         label.textAlignment = .left
+        label.font = UIFont.openSansFont(type: .regular, size: 16)
         return label
     }
 
@@ -103,9 +104,14 @@ class ViewController: BaseViewController {
             txtField.keyboardType = .numberPad
         }
         let okayAction = UIAlertAction.init(title: "OK", style: .default) { (alertAction) in
-            let text = alertController.textFields?.first?.text
-            let nbTables = Int(text!)
-            self.numberOfTables = nbTables!
+            guard let text = alertController.textFields?.first?.text else {
+                return
+            }
+            if text.isInt {
+                self.numberOfTables = Int(text)!
+            } else {
+                return
+            }
         }
         let cancelAction = UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil)
         alertController.addAction(okayAction)
@@ -119,8 +125,8 @@ class ViewController: BaseViewController {
             for imgViews in tableArray {
                 let xF = imgViews.frame.origin.x
                 let yF = imgViews.frame.origin.y
-                if !DBHelper.insertInto(table: coord, db: db, x: Double(xF), y: Double(yF)).success {
-                    guard let error = DBHelper.insertInto(table: coord, db: db, x: Double(xF), y: Double(yF)).error else {
+                if !DBHelper.insertIntoCoordinates(table: coord, db: db, x: Double(xF), y: Double(yF)).success {
+                    guard let error = DBHelper.insertIntoCoordinates(table: coord, db: db, x: Double(xF), y: Double(yF)).error else {
                         return
                     }
                     let alertController =  UIAlertController.init(title: "Error", error: error, defaultActionButtonTitle: "OK", tintColor: nil)
@@ -128,7 +134,7 @@ class ViewController: BaseViewController {
                 }
             }
         } else {
-            showAlert(title: "", message: "Operation failed. DB failed to delete entries for table: coord")
+            showAlert(title: "", message: "Operation failed. DB failed to delete entries for table: coord")            
         }
     }
 

@@ -39,7 +39,7 @@ class DBHelper {
         }
     }
 
-    static func insertInto(table: Table!, db: Connection!, x: Double, y: Double) -> (success: Bool, error: Error?) {
+    static func insertIntoCoordinates(table: Table!, db: Connection!, x: Double, y: Double) -> (success: Bool, error: Error?) {
         do {
             try db.run(table.insert(CoordinatesTableColumn.xColumn <- x, CoordinatesTableColumn.yColumn <- y))
             return (true, nil)

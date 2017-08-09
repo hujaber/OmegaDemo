@@ -18,9 +18,7 @@ class MainViewController: BaseViewController {
     @IBOutlet weak var cmdBtn: UIButton!
     @IBOutlet weak var cashBtn: UIButton!
     @IBOutlet weak var closeBtn: UIButton!
-    @IBOutlet weak var upperStackView: UIStackView!
     @IBOutlet weak var lowerStackView: UIStackView!
-    @IBOutlet weak var orderNumberLabel: UILabel!
     @IBOutlet weak var totalsView: UIView!
     @IBOutlet var totalSum: [UILabel]!
 
@@ -61,11 +59,20 @@ class MainViewController: BaseViewController {
                                   FoodItem.init(name: "Crispy 6 pcs", unitPrice: 1500, quantity: 1),
                                   FoodItem.init(name: "Fahita", unitPrice: 4000, quantity: 1),
                                   FoodItem.init(name: "Fransisco", unitPrice: 12500, quantity: 1),
+                                  FoodItem.init(name: "Falefel", unitPrice: 11000, quantity: 1),
+                                  FoodItem.init(name: "Cheese Burger", unitPrice: 5500, quantity: 1),
+                                  FoodItem.init(name: "Tabboleh", unitPrice: 13000, quantity: 1),
+                                  FoodItem.init(name: "Tuna Salad", unitPrice: 16000, quantity: 1),
+                                  FoodItem.init(name: "Ceasar Salad", unitPrice: 26000, quantity: 1),
+                                  FoodItem.init(name: "Farrouj", unitPrice: 43000, quantity: 1),
+                                  FoodItem.init(name: "Argile", unitPrice: 7500, quantity: 1),
+                                  FoodItem.init(name: "Orange Juice", unitPrice: 1500, quantity: 1),
+                                  FoodItem.init(name: "Crispy 6 pcs", unitPrice: 1500, quantity: 1),
+                                  FoodItem.init(name: "Fahita", unitPrice: 4000, quantity: 1),
+                                  FoodItem.init(name: "Fransisco", unitPrice: 12500, quantity: 1),
                                   FoodItem.init(name: "Falefel", unitPrice: 11000, quantity: 1)
     ]
     var selectedItems: [FoodItem] = []
-
-
 
     //MARK: - Lifecycle
 
@@ -74,14 +81,14 @@ class MainViewController: BaseViewController {
         setupTableView()
         setupCollectionView()
         setupButtons()
-        setupLabel()
         setupSearchBar()
-        upperStackView.spacing = 5
         lowerStackView.spacing = 5
+        lowerStackView.height = 60
         totalsView.cornerRadius = 5
         totalsView.borderColor = UIColor.lightGray.cgColor
         totalsView.borderWidth = 0.4
         updateTotalsLabel()
+        title = "Order #1254"
     }
 
     //MARK: - Setups
@@ -103,19 +110,13 @@ class MainViewController: BaseViewController {
         collectionView.backgroundColor = UIColor.white
     }
 
-    func setupLabel() {
-        orderNumberLabel.text = "Order #1254"
-        orderNumberLabel.textColor = UIColor.oliveColor
-        orderNumberLabel.textAlignment = .center
-        orderNumberLabel.font = UIFont.boldSystemFont(ofSize: 20)
-    }
-
     func setupButtons() {
         let btnsArray: [UIButton] = [holdOrderBtn, recallOrderBtn, printBtn, cmdBtn, cashBtn, closeBtn]
         for btn in btnsArray {
             btn.cornerRadius = ButtonProperty.cornerRadius
             btn.setTitleColor(UIColor.white, for: .normal)
             btn.backgroundColor = ButtonProperty.backgroundColor
+            btn.titleLabel?.font = UIFont.openSansFont(type: .semiBold, size: 16)
         }
     }
 
@@ -132,6 +133,7 @@ class MainViewController: BaseViewController {
             searchBar?.barTintColor = UIColor.oliveColor
             searchBar?.delegate = self
             searchBar?.placeholder = "Search here.."
+            
 
         }
         if !(searchBar?.isDescendant(of: view))! {
@@ -151,15 +153,14 @@ class MainViewController: BaseViewController {
     //MARK: - Private Methods
 
     func calculateTotal() -> String {
-        var sum: Float = 0.0
+        var sum: CGFloat = 0.0
         for item in selectedItems {
-            sum = sum + (Float(item.quantity!) * item.unitPrice)
+            sum = sum + (CGFloat(item.quantity!) * item.unitPrice)
         }
-        return "\(sum)"
+        return sum.cleanValue
     }
 
     func updateTotalsLabel() {
-
         totalSum.first?.text = calculateTotal()
     }
 
@@ -226,11 +227,14 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellId, for: indexPath) as! ItemsCollectionViewCell
         cell.backgroundColor = UIColor.lightBlueColor.withAlphaComponent(0.9)
         cell.layer.cornerRadius = 5
+        cell.itemLabel.font = UIFont.openSansFont(type: .semiBold, size: 18)
         if isSearchBarActive {
             cell.itemLabel.text = searchResults[indexPath.row].name!
         } else {
             cell.itemLabel.text = itemsArray[indexPath.row].name!
         }
+        cell.borderWidth = 0.2
+        cell.borderColor = UIColor.darkGray.cgColor
 
         return cell
     }
@@ -240,11 +244,11 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10.0
+        return 2.0
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 5.0
+        return 1.0
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -257,6 +261,8 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         selectedItem.quantity = 1 
         selectedItems.append(selectedItem)
         tableView.reloadData()
+        tableView.scrollToLastRow()
+        tableView.markLastCell(section: 0)
         updateTotalsLabel()
     }
 }

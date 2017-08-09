@@ -7,14 +7,14 @@
 //
 
 import Foundation
-
+import UIKit
 
 struct FoodItem {
     let name: String!
-    let unitPrice: Float
+    let unitPrice: CGFloat
     var quantity: UInt?
 
-    init(name: String, unitPrice: Float, quantity: UInt?) {
+    init(name: String, unitPrice: CGFloat, quantity: UInt?) {
         self.name = name
         self.unitPrice = unitPrice
         self.quantity = quantity

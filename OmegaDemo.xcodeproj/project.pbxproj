@@ -14,12 +14,24 @@
 		6331FEBC1F2B32BD00EA3728 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FEBB1F2B32BD00EA3728 /* Utilities.swift */; };
 		6331FEBE1F2B402900EA3728 /* testDB in Resources */ = {isa = PBXBuildFile; fileRef = 6331FEBD1F2B402900EA3728 /* testDB */; };
 		6331FEC11F2B67DC00EA3728 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FEC01F2B67DC00EA3728 /* FoodItem.swift */; };
+		635812161F34719600CA68CC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635812151F34719600CA68CC /* LoginViewController.swift */; };
 		63675FB51F1F51F500158F11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675FB41F1F51F500158F11 /* AppDelegate.swift */; };
 		63675FB71F1F51F500158F11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675FB61F1F51F500158F11 /* ViewController.swift */; };
 		63675FBA1F1F51F500158F11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63675FB81F1F51F500158F11 /* Main.storyboard */; };
 		63675FBC1F1F51F500158F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63675FBB1F1F51F500158F11 /* Assets.xcassets */; };
 		63675FBF1F1F51F500158F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63675FBD1F1F51F500158F11 /* LaunchScreen.storyboard */; };
 		63675FCD1F1F799A00158F11 /* dining_table.png in Resources */ = {isa = PBXBuildFile; fileRef = 63675FCC1F1F799A00158F11 /* dining_table.png */; };
+		636B6AC01F31FB2000323881 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 636B6AB61F31FB2000323881 /* OpenSans-Bold.ttf */; };
+		636B6AC11F31FB2000323881 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 636B6AB71F31FB2000323881 /* OpenSans-BoldItalic.ttf */; };
+		636B6AC21F31FB2000323881 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 636B6AB81F31FB2000323881 /* OpenSans-ExtraBold.ttf */; };
+		636B6AC31F31FB2000323881 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 636B6AB91F31FB2000323881 /* OpenSans-ExtraBoldItalic.ttf */; };
+		636B6AC41F31FB2000323881 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 636B6ABA1F31FB2000323881 /* OpenSans-Italic.ttf */; };
+		636B6AC51F31FB2000323881 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 636B6ABB1F31FB2000323881 /* OpenSans-Light.ttf */; };
+		636B6AC61F31FB2000323881 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 636B6ABC1F31FB2000323881 /* OpenSans-LightItalic.ttf */; };
+		636B6AC71F31FB2000323881 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 636B6ABD1F31FB2000323881 /* OpenSans-Regular.ttf */; };
+		636B6AC81F31FB2000323881 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 636B6ABE1F31FB2000323881 /* OpenSans-Semibold.ttf */; };
+		636B6AC91F31FB2000323881 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 636B6ABF1F31FB2000323881 /* OpenSans-SemiboldItalic.ttf */; };
+		636B6ACB1F31FB7A00323881 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636B6ACA1F31FB7A00323881 /* Fonts.swift */; };
 		63AB41AD1F20BA3C00DABDAE /* DraggabaleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB41AC1F20BA3C00DABDAE /* DraggabaleImageView.swift */; };
 		63CF133F1F262E9900C64594 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CF133E1F262E9900C64594 /* Extensions.swift */; };
 		63EAC9521F2626B200B9E847 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAC9511F2626B200B9E847 /* MainViewController.swift */; };
@@ -36,6 +48,7 @@
 		6331FEBB1F2B32BD00EA3728 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		6331FEBD1F2B402900EA3728 /* testDB */ = {isa = PBXFileReference; lastKnownFileType = file; path = testDB; sourceTree = "<group>"; };
 		6331FEC01F2B67DC00EA3728 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		635812151F34719600CA68CC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		63675FB11F1F51F500158F11 /* OmegaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmegaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63675FB41F1F51F500158F11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63675FB61F1F51F500158F11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +57,17 @@
 		63675FBE1F1F51F500158F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63675FC01F1F51F500158F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63675FCC1F1F799A00158F11 /* dining_table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dining_table.png; sourceTree = "<group>"; };
+		636B6AB61F31FB2000323881 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		636B6AB71F31FB2000323881 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		636B6AB81F31FB2000323881 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		636B6AB91F31FB2000323881 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		636B6ABA1F31FB2000323881 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		636B6ABB1F31FB2000323881 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		636B6ABC1F31FB2000323881 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		636B6ABD1F31FB2000323881 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		636B6ABE1F31FB2000323881 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		636B6ABF1F31FB2000323881 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		636B6ACA1F31FB7A00323881 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		63AB41AC1F20BA3C00DABDAE /* DraggabaleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggabaleImageView.swift; sourceTree = "<group>"; };
 		63CF133E1F262E9900C64594 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		63EAC9511F2626B200B9E847 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +106,7 @@
 		632878831F20858300D77207 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				635812151F34719600CA68CC /* LoginViewController.swift */,
 				63675FB61F1F51F500158F11 /* ViewController.swift */,
 				63EAC9511F2626B200B9E847 /* MainViewController.swift */,
 				632878811F20857F00D77207 /* BaseViewController.swift */,
@@ -109,6 +134,7 @@
 		632878861F2085AF00D77207 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				636B6AB51F31FB1300323881 /* Font */,
 				632878871F2085B800D77207 /* Images */,
 			);
 			name = Resources;
@@ -162,10 +188,28 @@
 				63675FB41F1F51F500158F11 /* AppDelegate.swift */,
 				63675FBB1F1F51F500158F11 /* Assets.xcassets */,
 				63675FC01F1F51F500158F11 /* Info.plist */,
+				636B6ACA1F31FB7A00323881 /* Fonts.swift */,
 				63CF133E1F262E9900C64594 /* Extensions.swift */,
 				6331FEBB1F2B32BD00EA3728 /* Utilities.swift */,
 			);
 			path = OmegaDemo;
+			sourceTree = "<group>";
+		};
+		636B6AB51F31FB1300323881 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				636B6AB61F31FB2000323881 /* OpenSans-Bold.ttf */,
+				636B6AB71F31FB2000323881 /* OpenSans-BoldItalic.ttf */,
+				636B6AB81F31FB2000323881 /* OpenSans-ExtraBold.ttf */,
+				636B6AB91F31FB2000323881 /* OpenSans-ExtraBoldItalic.ttf */,
+				636B6ABA1F31FB2000323881 /* OpenSans-Italic.ttf */,
+				636B6ABB1F31FB2000323881 /* OpenSans-Light.ttf */,
+				636B6ABC1F31FB2000323881 /* OpenSans-LightItalic.ttf */,
+				636B6ABD1F31FB2000323881 /* OpenSans-Regular.ttf */,
+				636B6ABE1F31FB2000323881 /* OpenSans-Semibold.ttf */,
+				636B6ABF1F31FB2000323881 /* OpenSans-SemiboldItalic.ttf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 		63AB41AB1F20BA1E00DABDAE /* Views */ = {
@@ -249,9 +293,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6331FEBE1F2B402900EA3728 /* testDB in Resources */,
+				636B6AC91F31FB2000323881 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				636B6AC31F31FB2000323881 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				636B6AC61F31FB2000323881 /* OpenSans-LightItalic.ttf in Resources */,
 				63675FBF1F1F51F500158F11 /* LaunchScreen.storyboard in Resources */,
+				636B6AC41F31FB2000323881 /* OpenSans-Italic.ttf in Resources */,
+				636B6AC01F31FB2000323881 /* OpenSans-Bold.ttf in Resources */,
+				636B6AC21F31FB2000323881 /* OpenSans-ExtraBold.ttf in Resources */,
+				636B6AC11F31FB2000323881 /* OpenSans-BoldItalic.ttf in Resources */,
 				63675FBC1F1F51F500158F11 /* Assets.xcassets in Resources */,
 				63675FBA1F1F51F500158F11 /* Main.storyboard in Resources */,
+				636B6AC51F31FB2000323881 /* OpenSans-Light.ttf in Resources */,
+				636B6AC71F31FB2000323881 /* OpenSans-Regular.ttf in Resources */,
+				636B6AC81F31FB2000323881 /* OpenSans-Semibold.ttf in Resources */,
 				63675FCD1F1F799A00158F11 /* dining_table.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6331FEBC1F2B32BD00EA3728 /* Utilities.swift in Sources */,
+				636B6ACB1F31FB7A00323881 /* Fonts.swift in Sources */,
 				63675FB71F1F51F500158F11 /* ViewController.swift in Sources */,
 				631B3DCA1F289A3500101100 /* SelectedItemsTableViewCell.swift in Sources */,
 				631B3DC81F28977000101100 /* ItemsCollectionViewCell.swift in Sources */,
@@ -321,6 +376,7 @@
 				632878801F20832400D77207 /* DBHelper.swift in Sources */,
 				63675FB51F1F51F500158F11 /* AppDelegate.swift in Sources */,
 				63CF133F1F262E9900C64594 /* Extensions.swift in Sources */,
+				635812161F34719600CA68CC /* LoginViewController.swift in Sources */,
 				6331FEC11F2B67DC00EA3728 /* FoodItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

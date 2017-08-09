@@ -23,24 +23,29 @@ class SelectedItemsTableViewCell: UITableViewCell {
         quantityStepper.stepValue = 1
         quantityStepper.minimumValue = 1
         quantityStepper.autorepeat = true
+        let font = UIFont.openSansFont(type: .regular, size: 16)
+        quantityLabel.font = font
+        itemNameLabel.font = font
+        unitPriceLabel.font = font
+        totalPriceLabel.font = font
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
 
-    func setCell(itemName: String!, quantity: UInt!, unitPrice: Float) {
-        var totalPrice: Float = 0
-        totalPrice = Float(quantity) * unitPrice
+    func setCell(itemName: String!, quantity: UInt!, unitPrice: CGFloat) {
+        var totalPrice: CGFloat = 0
+        totalPrice = CGFloat(quantity) * unitPrice
         quantityLabel.text = "\(quantity!)"
         itemNameLabel.text = itemName
-        unitPriceLabel.text = "\(unitPrice)"
-        totalPriceLabel.text = "\(totalPrice)"
+        unitPriceLabel.text = unitPrice.cleanValue
+        totalPriceLabel.text = totalPrice.cleanValue
     }
 
     @IBAction func stepperValueChangeAction(_ sender: UIStepper) {
         quantityLabel.text = "\(Int(quantityStepper.value))"
-        delegate?.didChangeQuantity(cellId: cellId!, newValue: UInt(Int(quantityStepper.value)))
+        delegate?.didChangeQuantity(cellId: cellId!, newValue: UInt(quantityStepper.value))
     }
 
 }

@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        setupNavigationController()
+        setupNavigationBar ()
         Utilities.copyFiles(fileName: "testDB")
         return true
     }
@@ -44,10 +44,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     //MARK: - Private Methods
 
-    func setupNavigationController() {
+    func setupNavigationBar() {
         UINavigationBar.appearance().barTintColor = UIColor.oliveColor
         UINavigationBar.appearance().tintColor = UIColor.white
         UIApplication.shared.statusBarStyle = .lightContent
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont.openSansFont(type: .regular, size: 17)], for: .normal)
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).font = UIFont.openSansFont(type: .regular, size: 17)
+        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont.openSansFont(type: .bold, size: 17), NSForegroundColorAttributeName: UIColor.white]
     }
 
 }

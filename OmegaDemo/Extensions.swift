@@ -21,6 +21,7 @@ extension UIColor {
 
 
 extension UIView {
+
     var borderColor: CGColor {
         get {
             return layer.borderColor!
@@ -164,12 +165,23 @@ extension UIAlertController {
 
 extension UITableView {
 
-    /// Scroll to bottom of TableView.
+    ///Scroll to last row in TableView section
     ///
-    /// - Parameter animated: set true to animate scroll (default is true).
-    public func scrollToBottom(animated: Bool = true) {
-        let bottomOffset = CGPoint(x: 0, y: contentSize.height - bounds.size.height)
-        setContentOffset(bottomOffset, animated: animated)
+    /// - Parameters:
+    ///     - section: section to be scrolled to bottom
+    public func scrollToLastRowInSection(section: Int) {
+        let indexPath = IndexPath.init(row: self.numberOfRows(inSection: section) - 1, section: 0)
+        self.scrollToRow(at: indexPath, at: .bottom, animated: true)
+    }
+
+    ///Scroll to last row in TableView
+    ///
+    public func scrollToLastRow() {
+        let nbOfSections = self.numberOfSections
+        let lastSection = nbOfSections - 1
+        let numberOfRowsInLastSection = self.numberOfRows(inSection: lastSection)
+        let indexPath = IndexPath.init(row: numberOfRowsInLastSection - 1, section: lastSection)
+        scrollToRow(at: indexPath, at: .bottom, animated: true)
     }
 
     /// Scroll to top of TableView.
@@ -178,11 +190,20 @@ extension UITableView {
     public func scrollToTop(animated: Bool = true) {
         setContentOffset(CGPoint.zero, animated: animated)
     }
+
+    public func markLastCell(section: Int) {
+        allowsMultipleSelection = false
+        let indexPath = IndexPath.init(row: numberOfRows(inSection: section) - 1, section: section)
+        let cell = cellForRow(at: indexPath)
+        cell?.selectionStyle = .gray
+        cell?.setSelected(true, animated: true)
+    }
+
 }
 
 public extension UISearchBar {
 
-    /// SwifterSwift: Clear text.
+    /// Clear text.
     public func clear() {
         text = ""
     }
@@ -210,11 +231,11 @@ extension String {
 //        return matches(pattern: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}")
 //    }
 
-    public func isValidEmail(supposedEmail: String) -> Bool {
+    public func isValidEmail() -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
 
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluate(with: supposedEmail)
+        return emailTest.evaluate(with: self)
     }
 
     public var length: Int {
@@ -224,6 +245,10 @@ extension String {
 
     public var trimmed: String {
         return trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    var isInt: Bool {
+        return Int(self) != nil
     }
 
     #if os(iOS) || os(macOS)
@@ -265,4 +290,25 @@ extension String {
     }
 
 
+}
+
+extension CGFloat {
+    var cleanValue: String {
+        return self.truncatingRemainder(dividingBy: 1) == 0 ? String(format: "%.0f", self) : String(describing: self)
+    }
+}
+
+extension UITextField {
+
+    public func addBottomBorder(width: CGFloat?, color: UIColor?) {
+        if borderStyle == .none {
+            let border = CALayer.init()
+            let width = (width != nil) ? width! : CGFloat(2.0)
+            border.borderColor = (color != nil) ? color!.cgColor : UIColor.black.cgColor
+            border.frame = CGRect.init(x: 0, y: self.height - width, width: self.width, height: self.height)
+            border.borderWidth = width
+            layer.addSublayer(border)
+            layer.masksToBounds = true
+        }
+    }
 }
