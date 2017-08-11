@@ -11,7 +11,7 @@ import UIKit
 import AVFoundation
 
 extension UIColor {
-    static let oliveColor = colorWithRGB(r: 139, g: 166, b: 57, alpha: 1.0)
+    static let oliveColor = colorWithRGB(r: 164, g: 189, b: 66, alpha: 1.0)
     static let lightBlueColor = colorWithRGB(r: 104, g: 202, b: 250, alpha: 1.0)
 
     private static func colorWithRGB(r: CGFloat, g: CGFloat, b: CGFloat, alpha: CGFloat) -> UIColor {
@@ -192,9 +192,13 @@ extension UITableView {
     }
 
     public func markLastCell(section: Int) {
-        allowsMultipleSelection = false
-        let indexPath = IndexPath.init(row: numberOfRows(inSection: section) - 1, section: section)
-        let cell = cellForRow(at: indexPath)
+        var indexPath = IndexPath.init(row: numberOfRows(inSection: section) - 1, section: section)
+        var cell = cellForRow(at: indexPath)
+        if cell == nil {
+            indexPath.row = indexPath.row - 1
+            cell = cellForRow(at: indexPath)
+        }
+
         cell?.selectionStyle = .gray
         cell?.setSelected(true, animated: true)
     }

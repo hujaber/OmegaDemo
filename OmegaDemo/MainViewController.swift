@@ -101,6 +101,7 @@ class MainViewController: BaseViewController {
         tableView.borderColor = UIColor.darkGray.cgColor
         tableView.cornerRadius = 5
         tableView.separatorColor = UIColor.lightGray
+        tableView.allowsMultipleSelection = false
     }
 
     func setupCollectionView() {
